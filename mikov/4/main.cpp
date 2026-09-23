@@ -16,6 +16,7 @@ struct Event {
 
 struct Statistics {
     size_t eventCount;
+    double lambda;
     double sampleMean;
     double theoreticalMean;
     double coefficientOfVariation;
@@ -74,9 +75,14 @@ Statistics runExperiment(int streamCount, double a, double b,
     double distributionError = 0.0;
     for (size_t i = 0; i < sortedIntervals.size(); ++i) {
         const double x = sortedIntervals[i];
-        const double empirical = static_cast<double>(i + 1) / sortedIntervals.size();
         const double theoretical = 1.0 - exp(-totalLambda * x);
-        distributionError = max(distributionError, abs(empirical - theoretical));
+        const double empiricalBefore = static_cast<double>(i) / sortedIntervals.size();
+        const double empiricalAfter = static_cast<double>(i + 1) / sortedIntervals.size();
+        distributionError = max({
+            distributionError,
+            abs(empiricalBefore - theoretical),
+            abs(empiricalAfter - theoretical)
+        });
     }
 
     const int binCount = 60;
@@ -93,7 +99,8 @@ Statistics runExperiment(int streamCount, double a, double b,
 
     const string fileName = "distribution_N" + to_string(streamCount) + ".csv";
     ofstream output(fileName);
-    output << "x,empirical_density,theoretical_density,empirical_cdf,theoretical_cdf\n";
+    output << "density_x,empirical_density,theoretical_density,"
+           << "cdf_x,empirical_cdf,theoretical_cdf\n";
     output << fixed << setprecision(8);
 
     for (int i = 0; i < binCount; ++i) {
@@ -108,11 +115,12 @@ Statistics runExperiment(int streamCount, double a, double b,
         const double theoreticalCdf = 1.0 - exp(-totalLambda * rightBoundary);
 
         output << x << ',' << empiricalDensity << ',' << theoreticalDensity << ','
-               << empiricalCdf << ',' << theoreticalCdf << '\n';
+               << rightBoundary << ',' << empiricalCdf << ',' << theoreticalCdf << '\n';
     }
 
     return {
         events.size(),
+        totalLambda,
         sampleMean,
         1.0 / totalLambda,
         coefficientOfVariation,
@@ -154,7 +162,7 @@ int main() {
 
     cout << fixed << setprecision(6);
     cout << "\nСравнение интервалов суперпозиции с экспоненциальным распределением\n";
-    cout << "N; событий; M выборочное; M теоретическое; "
+    cout << "N; событий; lambda; M выборочное; M теоретическое; "
          << "коэффициент вариации; ошибка F\n";
 
     for (int streamCount : streamCounts) {
@@ -163,6 +171,7 @@ int main() {
 
         cout << streamCount << "; "
              << statistics.eventCount << "; "
+             << statistics.lambda << "; "
              << statistics.sampleMean << "; "
              << statistics.theoreticalMean << "; "
              << statistics.coefficientOfVariation << "; "
