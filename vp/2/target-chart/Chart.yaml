@@ -1,0 +1,6 @@
+apiVersion: v2
+name: user-management
+description: Microservices user management application for Kubernetes exam
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

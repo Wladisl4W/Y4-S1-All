@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: profile-service
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.profile.replicaCount }}
+  selector:
+    matchLabels:
+      app: profile-service
+  template:
+    metadata:
+      labels:
+        app: profile-service
+    spec:
+      dnsConfig:
+        options:
+          - name: ndots
+            value: "1"
+      containers:
+        - name: profile-service
+          image: "{{ .Values.profile.image.repository }}:{{ .Values.profile.image.tag }}"
+          imagePullPolicy: {{ .Values.profile.image.pullPolicy }}
+          command: ["/bin/sh", "-c"]
+          args: ["pip install --no-cache-dir -r /app/requirements.txt && exec python /app/app.py"]
+          ports:
+            - containerPort: {{ .Values.profile.service.port }}
+          env:
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: JWT_SECRET
+            - name: DB_HOST
+              value: postgres
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: users
+            - name: DB_USER
+              value: postgres
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: POSTGRES_PASSWORD
+            - name: PROFILE_TITLE
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: PROFILE_TITLE
+            - name: NOTIFICATION_SERVICE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: NOTIFICATION_SERVICE_URL
+          volumeMounts:
+            - name: source
+              mountPath: /app
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.profile.service.port }}
+            initialDelaySeconds: {{ .Values.profile.probes.liveness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.profile.probes.liveness.periodSeconds }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.profile.service.port }}
+            initialDelaySeconds: {{ .Values.profile.probes.readiness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.profile.probes.readiness.periodSeconds }}
+      volumes:
+        - name: source
+          configMap:
+            name: profile-source

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-service
+  namespace: {{ .Values.namespace }}
+spec:
+  type: {{ .Values.auth.service.type }}
+  selector:
+    app: auth-service
+  ports:
+    - port: {{ .Values.auth.service.port }}
+      targetPort: {{ .Values.auth.service.port }}
+      {{- if eq .Values.auth.service.type "NodePort" }}
+      nodePort: {{ .Values.auth.service.nodePort }}
+      {{- end }}

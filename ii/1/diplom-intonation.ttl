@@ -1,0 +1,66 @@
+@prefix app: <https://example.org/intonation-trainer/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+app:trainer
+    rdfs:label "Тренировка интонации"@ru ;
+    app:usedBy app:singer ;
+    app:hasMode app:liveVoice, app:warmup, app:songMode ;
+    app:saves app:exerciseResult .
+
+app:singer
+    rdfs:label "Начинающий певец"@ru ;
+    app:selects app:warmup ;
+    app:uses app:microphone ;
+    app:opens app:mp3 ;
+    app:corrects app:draftMelody .
+
+app:microphone
+    rdfs:label "Микрофон"@ru ;
+    app:provides app:voiceSignal .
+
+app:voiceSignal
+    rdfs:label "Звук голоса"@ru ;
+    app:analyzedBy app:pitchDetector .
+
+app:pitchDetector
+    rdfs:label "Определение высоты голоса"@ru ;
+    app:produces app:detectedNote .
+
+app:liveVoice
+    rdfs:label "Режим живого голоса"@ru ;
+    app:shows app:voiceChart .
+
+app:voiceChart
+    rdfs:label "График высоты голоса"@ru ;
+    app:shows app:detectedNote, app:targetNote .
+
+app:detectedNote
+    rdfs:label "Распознанная нота"@ru .
+
+app:warmup
+    rdfs:label "Распевка"@ru ;
+    app:hasTarget app:targetNote ;
+    app:produces app:exerciseResult .
+
+app:targetNote
+    rdfs:label "Целевая нота"@ru .
+
+app:exerciseResult
+    rdfs:label "Результат занятия"@ru ;
+    app:storedIn app:localHistory .
+
+app:localHistory
+    rdfs:label "Локальная история занятий"@ru .
+
+app:songMode
+    rdfs:label "Экспериментальный режим песен"@ru ;
+    app:loads app:mp3 ;
+    app:shows app:draftMelody .
+
+app:mp3
+    rdfs:label "Локальный MP3-файл"@ru ;
+    app:analyzedFor app:draftMelody .
+
+app:draftMelody
+    rdfs:label "Черновая нотная линия"@ru ;
+    rdfs:comment "Автоматический результат может содержать ошибки и доступен для ручного исправления."@ru .

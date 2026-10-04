@@ -1,0 +1,13 @@
+grafana:
+  enabled: false
+
+alertmanager:
+  enabled: false
+
+kubelet:
+  serviceMonitor:
+    cAdvisorInterval: 5s
+
+prometheus:
+  prometheusSpec:
+    scrapeInterval: 5s

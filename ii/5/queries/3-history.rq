@@ -1,0 +1,6 @@
+PREFIX app: <https://example.org/intonation-trainer/>
+
+SELECT ?result ?history
+WHERE {
+  ?result app:storedIn ?history .
+}

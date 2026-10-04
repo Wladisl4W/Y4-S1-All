@@ -1,0 +1,156 @@
+{
+  "vus": 200,
+  "start_utc": "2026-09-25T13:31:09.314857+00:00",
+  "end_utc": "2026-09-25T13:31:41.328238+00:00",
+  "target_url": "http://127.0.0.1:30081/",
+  "queries": {
+    "cpu_percent": "100 * sum(rate(container_cpu_usage_seconds_total{namespace=\"vp-lr2\",container=\"auth-service\"}[20s]))",
+    "memory_mib": "sum(container_memory_working_set_bytes{namespace=\"vp-lr2\",container=\"auth-service\"}) / 1024 / 1024",
+    "rps": "sum(rate(http_requests_total{namespace=\"vp-lr2\",route=\"index\"}[15s]))",
+    "errors_5xx": "sum(rate(http_errors_total{namespace=\"vp-lr2\",group=\"5xx\"}[15s])) or vector(0)",
+    "p95_ms": "1000 * histogram_quantile(0.95, sum by (le) (increase(http_request_duration_seconds_bucket{namespace=\"vp-lr2\",route=\"index\"}[40s])))",
+    "p99_ms": "1000 * histogram_quantile(0.99, sum by (le) (increase(http_request_duration_seconds_bucket{namespace=\"vp-lr2\",route=\"index\"}[40s])))"
+  },
+  "responses": {
+    "cpu_percent": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1790343089.315,
+                "115.38883913653683"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "memory_mib": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1790343084.315,
+                "32.58203125"
+              ],
+              [
+                1790343089.315,
+                "33.80078125"
+              ],
+              [
+                1790343094.315,
+                "33.80078125"
+              ],
+              [
+                1790343099.315,
+                "33.80078125"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "rps": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1790343084.315,
+                "176.9"
+              ],
+              [
+                1790343089.315,
+                "176.70000000000002"
+              ],
+              [
+                1790343094.315,
+                "184.8"
+              ],
+              [
+                1790343099.315,
+                "192"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "errors_5xx": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1790343084.315,
+                "0"
+              ],
+              [
+                1790343089.315,
+                "0"
+              ],
+              [
+                1790343094.315,
+                "0"
+              ],
+              [
+                1790343099.315,
+                "0"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "p95_ms": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1790343106.328,
+              "8.422566371681418"
+            ]
+          }
+        ]
+      }
+    },
+    "p99_ms": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1790343106.328,
+              "16.429687500000036"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "averages": {
+    "cpu_percent_of_one_core": 115.38883913653683,
+    "memory_mib": 33.49609375,
+    "prometheus_p95_ms": 8.422566371681418,
+    "prometheus_p99_ms": 16.429687500000036
+  }
+}

@@ -1,0 +1,62 @@
+PREFIX : <http://www.semanticweb.org/mdebe/ontologies/example#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX swrl: <http://www.w3.org/2003/11/swrl#>
+
+1
+SELECT ?person ?age
+WHERE {
+  ?person rdf:type :Person ;
+          :has_Age ?age .
+  FILTER (?age > 30)
+}
+ORDER BY DESC(?age)
+
+2
+SELECT ?person ?sibling ?type
+WHERE {
+  { ?person :has_Brother ?sibling . BIND("brother" AS ?type) }
+  UNION
+  { ?person :has_Sister ?sibling . BIND("sister" AS ?type) }
+}
+ORDER BY ?person
+
+3
+SELECT ?husband ?wife
+WHERE {
+  ?husband :has_Wife ?wife .
+}
+
+4
+SELECT ?person
+WHERE {
+  ?person rdf:type :Person .
+  FILTER NOT EXISTS {
+    ?person :has_Social_Relation_With ?other .
+  }
+}
+
+5
+SELECT DISTINCT ?a ?b
+WHERE {
+  ?a :has_Friend ?b .
+  FILTER (STR(?a) < STR(?b))
+}
+ORDER BY ?a ?b
+
+6
+SELECT
+  (COUNT(DISTINCT ?person) AS ?people)
+  (COUNT(DISTINCT ?class)  AS ?classes)
+  (COUNT(DISTINCT ?objProp) AS ?objectProps)
+  (COUNT(DISTINCT ?dataProp) AS ?dataProps)
+  (COUNT(DISTINCT ?ind) AS ?individuals)
+WHERE {
+  { ?person rdf:type :Person }
+  UNION { ?class rdf:type owl:Class }
+  UNION { ?objProp rdf:type owl:ObjectProperty }
+  UNION { ?dataProp rdf:type owl:DatatypeProperty }
+  UNION { ?ind rdf:type owl:NamedIndividual }
+}

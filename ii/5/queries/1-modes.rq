@@ -1,0 +1,11 @@
+PREFIX app: <https://example.org/intonation-trainer/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mode ?name
+WHERE {
+  app:trainer app:hasMode ?mode .
+  ?mode a ?class .
+  ?class rdfs:label ?name .
+  FILTER(?class IN (app:LiveMode, app:ExerciseMode, app:SongMode))
+}
+ORDER BY ?name

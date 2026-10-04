@@ -1,0 +1,6 @@
+PREFIX app: <https://example.org/intonation-trainer/>
+
+SELECT (COUNT(DISTINCT ?mode) AS ?count)
+WHERE {
+  app:trainer app:hasMode ?mode .
+}

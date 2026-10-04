@@ -1,0 +1,41 @@
+namespace: vp-lr2
+
+auth:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: "3.11-slim"
+    pullPolicy: IfNotPresent
+  service:
+    type: NodePort
+    port: 5000
+    nodePort: 30081
+  probes:
+    liveness:
+      initialDelaySeconds: 180
+      periodSeconds: 10
+
+profile:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: "3.11-slim"
+    pullPolicy: IfNotPresent
+  probes:
+    liveness:
+      initialDelaySeconds: 180
+      periodSeconds: 10
+
+notification:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: "3.11-slim"
+    pullPolicy: IfNotPresent
+  probes:
+    liveness:
+      initialDelaySeconds: 180
+      periodSeconds: 10
+
+ingress:
+  enabled: false

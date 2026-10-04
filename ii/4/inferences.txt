@@ -1,0 +1,9 @@
+Проверка локальным механизмом OWL-RL:
+
+warmup rdf:type Feature: true
+warmup modeOf trainer: true
+trainer canShow targetNote: true
+trainer canShow detectedNote: true
+
+Все четыре утверждения не записаны как готовые факты в ontology.ttl.
+Они получены из иерархии классов, обратного свойства и цепочки свойств.

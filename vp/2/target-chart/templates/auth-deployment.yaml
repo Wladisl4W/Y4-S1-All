@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-service
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.auth.replicaCount }}
+  selector:
+    matchLabels:
+      app: auth-service
+  template:
+    metadata:
+      labels:
+        app: auth-service
+    spec:
+      dnsConfig:
+        options:
+          - name: ndots
+            value: "1"
+      containers:
+        - name: auth-service
+          image: "{{ .Values.auth.image.repository }}:{{ .Values.auth.image.tag }}"
+          imagePullPolicy: {{ .Values.auth.image.pullPolicy }}
+          command: ["/bin/sh", "-c"]
+          args: ["pip install --no-cache-dir -r /app/requirements.txt && exec python /app/app.py"]
+          ports:
+            - containerPort: {{ .Values.auth.service.port }}
+          env:
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: JWT_SECRET
+            - name: DB_HOST
+              value: postgres
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: users
+            - name: DB_USER
+              value: postgres
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: POSTGRES_PASSWORD
+            - name: LOGIN_TITLE
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: LOGIN_TITLE
+            - name: WELCOME_TEXT
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: WELCOME_TEXT
+            - name: PROFILE_SERVICE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: PROFILE_SERVICE_URL
+          volumeMounts:
+            - name: source
+              mountPath: /app
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.auth.service.port }}
+            initialDelaySeconds: {{ .Values.auth.probes.liveness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.auth.probes.liveness.periodSeconds }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.auth.service.port }}
+            initialDelaySeconds: {{ .Values.auth.probes.readiness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.auth.probes.readiness.periodSeconds }}
+      volumes:
+        - name: source
+          configMap:
+            name: auth-source

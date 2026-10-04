@@ -1,0 +1,26 @@
+1-modes.rq
+  https://example.org/intonation-trainer/liveVoice | Живой голос
+  https://example.org/intonation-trainer/songMode | Песни
+  https://example.org/intonation-trainer/warmup | Распевка
+  Строк: 3
+
+2-targets.rq
+  https://example.org/intonation-trainer/warmup | https://example.org/intonation-trainer/targetNote
+  Строк: 1
+
+3-history.rq
+  https://example.org/intonation-trainer/exerciseResult | https://example.org/intonation-trainer/localHistory
+  Строк: 1
+
+4-drafts.rq
+  https://example.org/intonation-trainer/singer | https://example.org/intonation-trainer/draftMelody | Линия может содержать ошибки; пользователь исправляет её вручную.
+  Строк: 1
+
+5-inferred-notes.rq
+  https://example.org/intonation-trainer/detectedNote
+  https://example.org/intonation-trainer/targetNote
+  Строк: 2
+
+6-count-modes.rq
+  3
+  Строк: 1

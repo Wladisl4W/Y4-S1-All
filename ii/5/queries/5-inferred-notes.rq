@@ -1,0 +1,7 @@
+PREFIX app: <https://example.org/intonation-trainer/>
+
+SELECT ?note
+WHERE {
+  app:trainer app:canShow ?note .
+}
+ORDER BY ?note

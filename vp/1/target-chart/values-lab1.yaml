@@ -1,0 +1,25 @@
+namespace: vp-lr1
+
+auth:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: "3.11-slim"
+    pullPolicy: IfNotPresent
+
+profile:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: "3.11-slim"
+    pullPolicy: IfNotPresent
+
+notification:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: "3.11-slim"
+    pullPolicy: IfNotPresent
+
+ingress:
+  enabled: false

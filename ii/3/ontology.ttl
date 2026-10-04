@@ -1,0 +1,127 @@
+@prefix app: <https://example.org/intonation-trainer/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/intonation-trainer> a owl:Ontology ;
+    rdfs:label "Онтология тренажёра интонации"@ru .
+
+app:Application a owl:Class ; rdfs:label "Приложение"@ru .
+app:Person a owl:Class ; rdfs:label "Пользователь"@ru .
+app:Mode a owl:Class ; rdfs:label "Режим"@ru .
+app:LiveMode a owl:Class ; rdfs:subClassOf app:Mode ; rdfs:label "Живой голос"@ru .
+app:ExerciseMode a owl:Class ; rdfs:subClassOf app:Mode ; rdfs:label "Распевка"@ru .
+app:SongMode a owl:Class ; rdfs:subClassOf app:Mode ; rdfs:label "Песни"@ru .
+app:Microphone a owl:Class ; rdfs:label "Микрофон"@ru .
+app:AudioSignal a owl:Class ; rdfs:label "Звук голоса"@ru .
+app:PitchDetector a owl:Class ; rdfs:label "Определитель высоты"@ru .
+app:VoiceChart a owl:Class ; rdfs:label "График голоса"@ru .
+app:Note a owl:Class ; rdfs:label "Нота"@ru .
+app:DetectedNote a owl:Class ; rdfs:subClassOf app:Note ;
+    rdfs:label "Распознанная нота"@ru .
+app:TargetNote a owl:Class ; rdfs:subClassOf app:Note ;
+    rdfs:label "Целевая нота"@ru .
+app:ExerciseResult a owl:Class ; rdfs:label "Результат распевки"@ru .
+app:LocalHistory a owl:Class ; rdfs:label "Локальная история"@ru .
+app:AudioFile a owl:Class ; rdfs:label "Аудиофайл"@ru .
+app:DraftMelody a owl:Class ; rdfs:label "Черновая нотная линия"@ru .
+
+app:hasMode a owl:ObjectProperty ;
+    rdfs:domain app:Application ; rdfs:range app:Mode .
+app:selectsMode a owl:ObjectProperty ;
+    rdfs:domain app:Person ; rdfs:range app:Mode .
+app:usesMicrophone a owl:ObjectProperty ;
+    rdfs:domain app:Person ; rdfs:range app:Microphone .
+app:providesSignal a owl:ObjectProperty ;
+    rdfs:domain app:Microphone ; rdfs:range app:AudioSignal .
+app:analyzedBy a owl:ObjectProperty ;
+    rdfs:domain app:AudioSignal ; rdfs:range app:PitchDetector .
+app:producesNote a owl:ObjectProperty ;
+    rdfs:domain app:PitchDetector ; rdfs:range app:DetectedNote .
+app:showsChart a owl:ObjectProperty ;
+    rdfs:domain app:LiveMode ; rdfs:range app:VoiceChart .
+app:displaysNote a owl:ObjectProperty ;
+    rdfs:domain app:VoiceChart ; rdfs:range app:Note .
+app:hasTarget a owl:ObjectProperty ;
+    rdfs:domain app:ExerciseMode ; rdfs:range app:TargetNote .
+app:producesResult a owl:ObjectProperty ;
+    rdfs:domain app:ExerciseMode ; rdfs:range app:ExerciseResult .
+app:storedIn a owl:ObjectProperty ;
+    rdfs:domain app:ExerciseResult ; rdfs:range app:LocalHistory .
+app:loadsFile a owl:ObjectProperty ;
+    rdfs:domain app:SongMode ; rdfs:range app:AudioFile .
+app:showsDraft a owl:ObjectProperty ;
+    rdfs:domain app:SongMode ; rdfs:range app:DraftMelody .
+app:correctsDraft a owl:ObjectProperty ;
+    rdfs:domain app:Person ; rdfs:range app:DraftMelody .
+
+app:trainer a owl:NamedIndividual, app:Application ;
+    rdfs:label "Тренировка интонации"@ru ;
+    app:hasMode app:liveVoice, app:warmup, app:songMode .
+app:singer a owl:NamedIndividual, app:Person ;
+    rdfs:label "Начинающий певец"@ru ;
+    app:selectsMode app:warmup ;
+    app:usesMicrophone app:microphone ;
+    app:correctsDraft app:draftMelody .
+app:microphone a owl:NamedIndividual, app:Microphone ;
+    app:providesSignal app:voiceSignal .
+app:voiceSignal a owl:NamedIndividual, app:AudioSignal ;
+    app:analyzedBy app:pitchDetector .
+app:pitchDetector a owl:NamedIndividual, app:PitchDetector ;
+    app:producesNote app:detectedNote .
+app:liveVoice a owl:NamedIndividual, app:LiveMode ;
+    app:showsChart app:voiceChart .
+app:voiceChart a owl:NamedIndividual, app:VoiceChart ;
+    app:displaysNote app:detectedNote, app:targetNote .
+app:detectedNote a owl:NamedIndividual, app:DetectedNote .
+app:warmup a owl:NamedIndividual, app:ExerciseMode ;
+    app:hasTarget app:targetNote ;
+    app:producesResult app:exerciseResult .
+app:targetNote a owl:NamedIndividual, app:TargetNote .
+app:exerciseResult a owl:NamedIndividual, app:ExerciseResult ;
+    app:storedIn app:localHistory .
+app:localHistory a owl:NamedIndividual, app:LocalHistory .
+app:songMode a owl:NamedIndividual, app:SongMode ;
+    app:loadsFile app:mp3 ;
+    app:showsDraft app:draftMelody .
+app:mp3 a owl:NamedIndividual, app:AudioFile .
+app:draftMelody a owl:NamedIndividual, app:DraftMelody ;
+    rdfs:comment "Линия может содержать ошибки; пользователь исправляет её вручную."@ru .
+
+# Класс определяется свойствами объекта, а не назначается ему вручную.
+app:ExerciseWithTarget a owl:Class ;
+    rdfs:label "Распевка с целевой нотой"@ru ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            app:ExerciseMode
+            [ a owl:Restriction ;
+              owl:onProperty app:hasTarget ;
+              owl:someValuesFrom app:TargetNote ]
+        )
+    ] .
+
+app:EditableDraft a owl:Class ;
+    rdfs:label "Черновая линия для проверки"@ru ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            app:DraftMelody
+            [ a owl:Restriction ;
+              owl:onProperty app:needsReview ;
+              owl:hasValue true ]
+        )
+    ] .
+
+app:needsReview a owl:DatatypeProperty ;
+    rdfs:domain app:DraftMelody ;
+    rdfs:range xsd:boolean .
+app:draftMelody app:needsReview true .
+
+app:containsResult a owl:ObjectProperty ;
+    rdfs:domain app:LocalHistory ;
+    rdfs:range app:ExerciseResult .
+app:storedIn owl:inverseOf app:containsResult .
+
+app:LiveMode owl:disjointWith app:ExerciseMode, app:SongMode .
+app:ExerciseMode owl:disjointWith app:SongMode .

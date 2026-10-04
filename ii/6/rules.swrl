@@ -1,0 +1,5 @@
+DraftMelody(?d) ^ Person(?p) ^ correctsDraft(?p, ?d) -> EditedDraft(?d)
+Person(?p) ^ correctsDraft(?p, ?d) -> DraftEditor(?p)
+ExerciseMode(?e) ^ hasTarget(?e, ?n) -> TargetedExercise(?e)
+ExerciseResult(?r) ^ scorePercent(?r, ?score) ^ swrlb:lessThan(?score, 60) -> NeedsPractice(?r)
+DetectedNote(?n) ^ frequencyHz(?n, ?hz) ^ swrlb:lessThan(?hz, 60) -> OutsideVoiceRange(?n)

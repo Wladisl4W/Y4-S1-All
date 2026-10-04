@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notification-service
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.notification.replicaCount }}
+  selector:
+    matchLabels:
+      app: notification-service
+  template:
+    metadata:
+      labels:
+        app: notification-service
+    spec:
+      containers:
+        - name: notification-service
+          image: "{{ .Values.notification.image.repository }}:{{ .Values.notification.image.tag }}"
+          imagePullPolicy: {{ .Values.notification.image.pullPolicy }}
+          command: ["/bin/sh", "-c"]
+          args: ["pip install --no-cache-dir -r /app/requirements.txt && exec python /app/app.py"]
+          ports:
+            - containerPort: {{ .Values.notification.service.port }}
+          env:
+            - name: NOTIFICATION_LOG
+              value: /tmp/notifications.log
+            - name: LOG_LEVEL
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: LOG_LEVEL
+                  optional: true
+          volumeMounts:
+            - name: tmp-cache
+              mountPath: /tmp
+            - name: source
+              mountPath: /app
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.notification.service.port }}
+            initialDelaySeconds: {{ .Values.notification.probes.liveness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.notification.probes.liveness.periodSeconds }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.notification.service.port }}
+            initialDelaySeconds: {{ .Values.notification.probes.readiness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.notification.probes.readiness.periodSeconds }}
+      volumes:
+        - name: tmp-cache
+          emptyDir: {}
+        - name: source
+          configMap:
+            name: notification-source

@@ -1,0 +1,8 @@
+PREFIX app: <https://example.org/intonation-trainer/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?person ?draft ?comment
+WHERE {
+  ?person app:correctsDraft ?draft .
+  OPTIONAL { ?draft rdfs:comment ?comment . }
+}

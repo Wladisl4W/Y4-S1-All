@@ -1,0 +1,22 @@
+namespace: exam-kolomiets-dev
+
+auth:
+  replicaCount: 1
+  image:
+    tag: "dev"
+
+profile:
+  replicaCount: 1
+  image:
+    tag: "dev"
+
+notification:
+  replicaCount: 1
+  image:
+    tag: "dev"
+
+config:
+  LOG_LEVEL: "debug"
+
+cronjob:
+  schedule: "*/5 * * * *"

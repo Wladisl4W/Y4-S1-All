@@ -1,0 +1,735 @@
+{
+  "container_cpu_usage_seconds_total{namespace=\"vp-lr2\",container=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "container_cpu_usage_seconds_total",
+            "container": "auth-service",
+            "cpu": "total",
+            "endpoint": "https-metrics",
+            "id": "/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-pod49da5f9a_a08d_44fb_aaef_d816e2a86a88.slice/cri-containerd-1864baad4739641a8d599f04de345fa3453db46d0d2615ac972554c890c660b3.scope",
+            "image": "docker.io/library/python:3.11-slim",
+            "instance": "100.98.53.37:10250",
+            "job": "kubelet",
+            "metrics_path": "/metrics/cadvisor",
+            "name": "1864baad4739641a8d599f04de345fa3453db46d0d2615ac972554c890c660b3",
+            "namespace": "vp-lr2",
+            "node": "nemo",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "prometheus-kube-prometheus-kubelet"
+          },
+          "value": [
+            1790350817.112,
+            "9.506806"
+          ]
+        }
+      ]
+    }
+  },
+  "process_cpu_seconds_total{namespace=\"vp-lr2\",service=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "process_cpu_seconds_total",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.12,
+            "0.64"
+          ]
+        }
+      ]
+    }
+  },
+  "container_memory_working_set_bytes{namespace=\"vp-lr2\",container=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "container_memory_working_set_bytes",
+            "container": "auth-service",
+            "endpoint": "https-metrics",
+            "id": "/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-pod49da5f9a_a08d_44fb_aaef_d816e2a86a88.slice/cri-containerd-1864baad4739641a8d599f04de345fa3453db46d0d2615ac972554c890c660b3.scope",
+            "image": "docker.io/library/python:3.11-slim",
+            "instance": "100.98.53.37:10250",
+            "job": "kubelet",
+            "metrics_path": "/metrics/cadvisor",
+            "name": "1864baad4739641a8d599f04de345fa3453db46d0d2615ac972554c890c660b3",
+            "namespace": "vp-lr2",
+            "node": "nemo",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "prometheus-kube-prometheus-kubelet"
+          },
+          "value": [
+            1790350817.128,
+            "29741056"
+          ]
+        }
+      ]
+    }
+  },
+  "process_resident_memory_bytes{namespace=\"vp-lr2\",service=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "process_resident_memory_bytes",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.133,
+            "39260160"
+          ]
+        }
+      ]
+    }
+  },
+  "http_requests_total{namespace=\"vp-lr2\",service=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "http_requests_total",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "method": "GET",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service",
+            "status": "200"
+          },
+          "value": [
+            1790350817.137,
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "http_request_duration_seconds_bucket{namespace=\"vp-lr2\",service=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.005",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.01",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.025",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.05",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.075",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.1",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.25",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.5",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "0.75",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "1.0",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "2.5",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "5.0",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "7.5",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "10.0",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_request_duration_seconds_bucket",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "le": "+Inf",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "route": "index",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.147,
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "http_errors_total{namespace=\"vp-lr2\",service=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "http_errors_total",
+            "container": "auth-service",
+            "endpoint": "http",
+            "group": "4xx",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.155,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "http_errors_total",
+            "container": "auth-service",
+            "endpoint": "http",
+            "group": "5xx",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.155,
+            "0"
+          ]
+        }
+      ]
+    }
+  },
+  "kube_pod_status_phase{namespace=\"vp-lr2\",phase=\"Running\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "postgres-0",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "cbe2b291-2116-4343-8db4-69e987b6daec"
+          },
+          "value": [
+            1790350817.163,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "notification-service-89fb7c8f7-qlvvb",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "03f6adb0-c35a-4e5c-9833-cfdd8c7e4ecc"
+          },
+          "value": [
+            1790350817.163,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "notification-cronjob-29839175-rwvmb",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "a6125879-f099-40d9-a680-8ffca82ba9f0"
+          },
+          "value": [
+            1790350817.163,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "notification-cronjob-29839105-m5w4x",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "80250149-c9b7-46ef-885c-bb91a599473e"
+          },
+          "value": [
+            1790350817.163,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "profile-service-54f85c8bcb-dgxx6",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "a4729994-e15b-48a0-8c52-9fc2fefa92d7"
+          },
+          "value": [
+            1790350817.163,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "49da5f9a-a08d-44fb-aaef-d816e2a86a88"
+          },
+          "value": [
+            1790350817.163,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "db-init-job-gdm59",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "f98be375-3c2e-426b-84e9-248e484caae7"
+          },
+          "value": [
+            1790350817.163,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "kube_pod_status_phase",
+            "container": "kube-state-metrics",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "phase": "Running",
+            "pod": "notification-cronjob-29839180-8d4tb",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "aa4183b2-84b8-4450-815c-8a00c8cf3f9e"
+          },
+          "value": [
+            1790350817.163,
+            "0"
+          ]
+        }
+      ]
+    }
+  },
+  "kube_pod_container_status_restarts_total{namespace=\"vp-lr2\",container=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "kube_pod_container_status_restarts_total",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.111:8080",
+            "job": "kube-state-metrics",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "prometheus-kube-state-metrics",
+            "uid": "49da5f9a-a08d-44fb-aaef-d816e2a86a88"
+          },
+          "value": [
+            1790350817.17,
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "up{namespace=\"vp-lr2\",service=\"auth-service\"}": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "up",
+            "container": "auth-service",
+            "endpoint": "http",
+            "instance": "10.42.0.117:5000",
+            "job": "auth-service",
+            "namespace": "vp-lr2",
+            "pod": "auth-service-59894dcf96-drqs7",
+            "service": "auth-service"
+          },
+          "value": [
+            1790350817.175,
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "targets_auth_service": [
+    {
+      "discoveredLabels": {
+        "__address__": "10.42.0.117:5000",
+        "__always_scrape_classic_histograms__": "false",
+        "__convert_classic_histograms_to_nhcb__": "false",
+        "__meta_kubernetes_endpoint_address_target_kind": "Pod",
+        "__meta_kubernetes_endpoint_address_target_name": "auth-service-59894dcf96-drqs7",
+        "__meta_kubernetes_endpoint_node_name": "nemo",
+        "__meta_kubernetes_endpoint_port_name": "http",
+        "__meta_kubernetes_endpoint_port_protocol": "TCP",
+        "__meta_kubernetes_endpoint_ready": "true",
+        "__meta_kubernetes_endpoints_annotation_endpoints_kubernetes_io_last_change_trigger_time": "2026-09-25T15:39:33Z",
+        "__meta_kubernetes_endpoints_annotationpresent_endpoints_kubernetes_io_last_change_trigger_time": "true",
+        "__meta_kubernetes_endpoints_label_app": "auth-service",
+        "__meta_kubernetes_endpoints_label_app_kubernetes_io_managed_by": "Helm",
+        "__meta_kubernetes_endpoints_label_endpoints_kubernetes_io_managed_by": "endpoint-controller",
+        "__meta_kubernetes_endpoints_labelpresent_app": "true",
+        "__meta_kubernetes_endpoints_labelpresent_app_kubernetes_io_managed_by": "true",
+        "__meta_kubernetes_endpoints_labelpresent_endpoints_kubernetes_io_managed_by": "true",
+        "__meta_kubernetes_endpoints_name": "auth-service",
+        "__meta_kubernetes_namespace": "vp-lr2",
+        "__meta_kubernetes_pod_annotation_kubectl_kubernetes_io_restartedAt": "2026-09-25T16:26:52+03:00",
+        "__meta_kubernetes_pod_annotationpresent_kubectl_kubernetes_io_restartedAt": "true",
+        "__meta_kubernetes_pod_container_image": "python:3.11-slim",
+        "__meta_kubernetes_pod_container_init": "false",
+        "__meta_kubernetes_pod_container_name": "auth-service",
+        "__meta_kubernetes_pod_container_port_number": "5000",
+        "__meta_kubernetes_pod_container_port_protocol": "TCP",
+        "__meta_kubernetes_pod_controller_kind": "ReplicaSet",
+        "__meta_kubernetes_pod_controller_name": "auth-service-59894dcf96",
+        "__meta_kubernetes_pod_host_ip": "100.98.53.37",
+        "__meta_kubernetes_pod_ip": "10.42.0.117",
+        "__meta_kubernetes_pod_label_app": "auth-service",
+        "__meta_kubernetes_pod_label_pod_template_hash": "59894dcf96",
+        "__meta_kubernetes_pod_labelpresent_app": "true",
+        "__meta_kubernetes_pod_labelpresent_pod_template_hash": "true",
+        "__meta_kubernetes_pod_name": "auth-service-59894dcf96-drqs7",
+        "__meta_kubernetes_pod_node_name": "nemo",
+        "__meta_kubernetes_pod_phase": "Running",
+        "__meta_kubernetes_pod_ready": "true",
+        "__meta_kubernetes_pod_uid": "49da5f9a-a08d-44fb-aaef-d816e2a86a88",
+        "__meta_kubernetes_service_annotation_meta_helm_sh_release_name": "vp-lr2",
+        "__meta_kubernetes_service_annotation_meta_helm_sh_release_namespace": "vp-lr2",
+        "__meta_kubernetes_service_annotationpresent_meta_helm_sh_release_name": "true",
+        "__meta_kubernetes_service_annotationpresent_meta_helm_sh_release_namespace": "true",
+        "__meta_kubernetes_service_label_app": "auth-service",
+        "__meta_kubernetes_service_label_app_kubernetes_io_managed_by": "Helm",
+        "__meta_kubernetes_service_labelpresent_app": "true",
+        "__meta_kubernetes_service_labelpresent_app_kubernetes_io_managed_by": "true",
+        "__meta_kubernetes_service_name": "auth-service",
+        "__metrics_path__": "/metrics",
+        "__scheme__": "http",
+        "__scrape_interval__": "5s",
+        "__scrape_native_histograms__": "false",
+        "__scrape_timeout__": "5s",
+        "job": "serviceMonitor/monitoring/auth-service/0"
+      },
+      "labels": {
+        "container": "auth-service",
+        "endpoint": "http",
+        "instance": "10.42.0.117:5000",
+        "job": "auth-service",
+        "namespace": "vp-lr2",
+        "pod": "auth-service-59894dcf96-drqs7",
+        "service": "auth-service"
+      },
+      "scrapePool": "serviceMonitor/monitoring/auth-service/0",
+      "scrapeUrl": "http://10.42.0.117:5000/metrics",
+      "globalUrl": "http://10.42.0.117:5000/metrics",
+      "lastError": "",
+      "lastScrape": "2026-09-25T15:40:16.33451404Z",
+      "lastScrapeDuration": 0.002793835,
+      "health": "up",
+      "scrapeInterval": "5s",
+      "scrapeTimeout": "5s"
+    }
+  ]
+}

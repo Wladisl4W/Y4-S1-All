@@ -1,0 +1,7 @@
+PREFIX app: <https://example.org/intonation-trainer/>
+
+SELECT ?exercise ?note
+WHERE {
+  ?exercise a app:ExerciseMode ;
+            app:hasTarget ?note .
+}
