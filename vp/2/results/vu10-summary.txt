@@ -1,0 +1,7 @@
+    checks_total.......: 300     9.8336/s
+    checks_succeeded...: 100.00% 300 out of 300
+    checks_failed......: 0.00%   0 out of 300
+    http_req_duration..............: avg=11.91ms med=8.72ms p(90)=19.05ms p(95)=25.07ms p(99)=75.87ms min=4.09ms max=102.6ms
+    http_req_failed................: 0.00%  0 out of 300
+    http_reqs......................: 300    9.8336/s
+    vus_max........................: 10     min=10       max=10

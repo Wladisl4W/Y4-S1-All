@@ -1,0 +1,350 @@
+{
+  "start_utc": "2026-10-28T11:47:00.462391+00:00",
+  "end_utc": "2026-10-28T11:48:01.168844+00:00",
+  "queries": {
+    "rps": "sum(rate(http_requests_total{namespace=\"vp-lr4\",route=\"work\"}[30s]))",
+    "errors": "sum(rate(http_requests_total{namespace=\"vp-lr4\",route=\"work\",status=~\"[45]..\"}[30s])) or vector(0)",
+    "cpu": "sum(rate(container_cpu_usage_seconds_total{namespace=\"vp-lr4\",container=\"auth-service\"}[30s]))",
+    "memory": "sum(container_memory_working_set_bytes{namespace=\"vp-lr4\",container=\"auth-service\"}) / 1024 / 1024",
+    "server_p95": "histogram_quantile(0.95, sum by (le) (rate(http_request_duration_seconds_bucket{namespace=\"vp-lr4\",route=\"work\"}[30s])))",
+    "pod_rps": "sum by (pod) (rate(work_requests_total{namespace=\"vp-lr4\"}[30s]))",
+    "pod_cpu": "sum by (pod) (rate(container_cpu_usage_seconds_total{namespace=\"vp-lr4\",container=\"auth-service\"}[30s]))",
+    "available": "kube_deployment_status_replicas_available{namespace=\"vp-lr4\",deployment=\"auth-service\"}"
+  },
+  "responses": {
+    "rps": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1793188051.169,
+                "10"
+              ],
+              [
+                1793188056.169,
+                "10.001200144017282"
+              ],
+              [
+                1793188061.169,
+                "10"
+              ],
+              [
+                1793188066.169,
+                "10.001200144017282"
+              ],
+              [
+                1793188071.169,
+                "10"
+              ],
+              [
+                1793188076.169,
+                "10"
+              ],
+              [
+                1793188081.169,
+                "10"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "errors": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1793188051.169,
+                "0"
+              ],
+              [
+                1793188056.169,
+                "0"
+              ],
+              [
+                1793188061.169,
+                "0"
+              ],
+              [
+                1793188066.169,
+                "0"
+              ],
+              [
+                1793188071.169,
+                "0"
+              ],
+              [
+                1793188076.169,
+                "0"
+              ],
+              [
+                1793188081.169,
+                "0"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "cpu": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1793188051.169,
+                "0.27653123799392076"
+              ],
+              [
+                1793188056.169,
+                "0.37946835329876605"
+              ],
+              [
+                1793188061.169,
+                "0.39320110382890666"
+              ],
+              [
+                1793188066.169,
+                "0.4059959187073135"
+              ],
+              [
+                1793188071.169,
+                "0.4059959187073135"
+              ],
+              [
+                1793188081.169,
+                "0.3985710799584628"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "memory": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1793188051.169,
+                "28.71484375"
+              ],
+              [
+                1793188056.169,
+                "28.71484375"
+              ],
+              [
+                1793188061.169,
+                "28.6484375"
+              ],
+              [
+                1793188066.169,
+                "28.6484375"
+              ],
+              [
+                1793188071.169,
+                "28.6484375"
+              ],
+              [
+                1793188076.169,
+                "28.6484375"
+              ],
+              [
+                1793188081.169,
+                "28.96875"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "server_p95": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {},
+            "values": [
+              [
+                1793188051.169,
+                "0.04909574468085107"
+              ],
+              [
+                1793188056.169,
+                "0.04909574468085107"
+              ],
+              [
+                1793188061.169,
+                "0.04899364406779661"
+              ],
+              [
+                1793188066.169,
+                "0.04894153225806452"
+              ],
+              [
+                1793188071.169,
+                "0.04923469387755102"
+              ],
+              [
+                1793188076.169,
+                "0.04903846153846154"
+              ],
+              [
+                1793188081.169,
+                "0.04913617886178862"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "pod_rps": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {
+              "pod": "auth-service-5fb8f44995-ztpr7"
+            },
+            "values": [
+              [
+                1793188051.169,
+                "10"
+              ],
+              [
+                1793188056.169,
+                "10.001200144017282"
+              ],
+              [
+                1793188061.169,
+                "10"
+              ],
+              [
+                1793188066.169,
+                "10.001200144017282"
+              ],
+              [
+                1793188071.169,
+                "10"
+              ],
+              [
+                1793188076.169,
+                "10"
+              ],
+              [
+                1793188081.169,
+                "10"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "pod_cpu": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {
+              "pod": "auth-service-5fb8f44995-ztpr7"
+            },
+            "values": [
+              [
+                1793188051.169,
+                "0.27653123799392076"
+              ],
+              [
+                1793188056.169,
+                "0.37946835329876605"
+              ],
+              [
+                1793188061.169,
+                "0.39320110382890666"
+              ],
+              [
+                1793188066.169,
+                "0.4059959187073135"
+              ],
+              [
+                1793188071.169,
+                "0.4059959187073135"
+              ],
+              [
+                1793188081.169,
+                "0.3985710799584628"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "available": {
+      "status": "success",
+      "data": {
+        "resultType": "matrix",
+        "result": [
+          {
+            "metric": {
+              "__name__": "kube_deployment_status_replicas_available",
+              "container": "kube-state-metrics",
+              "deployment": "auth-service",
+              "endpoint": "http",
+              "instance": "10.42.0.192:8080",
+              "job": "kube-state-metrics",
+              "namespace": "vp-lr4",
+              "pod": "prometheus-kube-state-metrics-f76475cc7-bk7zc",
+              "service": "prometheus-kube-state-metrics"
+            },
+            "values": [
+              [
+                1793188051.169,
+                "1"
+              ],
+              [
+                1793188056.169,
+                "1"
+              ],
+              [
+                1793188061.169,
+                "1"
+              ],
+              [
+                1793188066.169,
+                "1"
+              ],
+              [
+                1793188071.169,
+                "1"
+              ],
+              [
+                1793188076.169,
+                "1"
+              ],
+              [
+                1793188081.169,
+                "1"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

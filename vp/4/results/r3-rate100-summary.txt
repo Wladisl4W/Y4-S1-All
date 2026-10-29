@@ -1,0 +1,10 @@
+    http_req_duration
+    http_req_failed
+    checks_total.......: 5906    98.036312/s
+    checks_succeeded...: 100.00% 5906 out of 5906
+    checks_failed......: 0.00%   0 out of 5906
+    http_req_duration..............: avg=202.93ms min=17.66ms med=44.02ms max=2.61s p(90)=655.23ms p(95)=1.19s
+    http_req_failed................: 0.00%  0 out of 5906
+    http_reqs......................: 5906   98.036312/s
+    dropped_iterations.............: 94     1.560348/s
+time="2026-10-28T15:05:04+03:00" level=error msg="thresholds on metrics 'http_req_duration' have been crossed"

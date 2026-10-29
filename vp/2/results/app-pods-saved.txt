@@ -1,0 +1,9 @@
+NAME                                      READY   STATUS      RESTARTS        AGE
+auth-service-59894dcf96-drqs7           1/1     Running     1 (6m2s ago)   138m
+db-init-job-qdm59                         0/1     Completed   0               171m
+notification-cronjob-29839105-n5w4x      0/1     Completed   0               79m
+notification-cronjob-29839175-rwvmb      0/1     Completed   0               5m52s
+notification-cronjob-29839180-8d4tb      0/1     Completed   0               4m57s
+notification-service-89fb7c8f7-qlvvb     1/1     Running     1 (6m2s ago)   157m
+postgres-0                                1/1     Running     1 (6m2s ago)   171m
+profile-service-54f85c8bcb-dgxx6        1/1     Running     1 (6m2s ago)   157m

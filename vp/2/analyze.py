@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 import matplotlib
@@ -57,6 +58,25 @@ plt.legend()
 plt.tight_layout()
 plt.savefig(results / "p95.png", dpi=180)
 plt.close()
+
+# Plot the actual range-query samples retained from Prometheus for each run.
+fig, ax = plt.subplots(figsize=(8, 4.5))
+for vus in (10, 50, 200):
+    saved = json.loads((results / f"vu{vus}.prometheus.json").read_text())
+    series = saved["responses"]["rps"]["data"]["result"]
+    points = [point for item in series for point in item.get("values", [])]
+    times = [datetime.fromtimestamp(float(point[0]), timezone.utc) for point in points]
+    rates = [float(point[1]) for point in points]
+    ax.plot(times, rates, "o-", label=f"{vus} VU")
+ax.set_title("RPS по сохранённым ответам Prometheus")
+ax.set_xlabel("Время, UTC")
+ax.set_ylabel("Запросов в секунду")
+ax.grid(alpha=0.3)
+ax.legend()
+fig.autofmt_xdate()
+fig.tight_layout()
+fig.savefig(results / "prometheus-rps-time.png", dpi=180)
+plt.close(fig)
 
 fig, left = plt.subplots(figsize=(8, 4.5))
 left.plot(loads, [row["cpu_percent_of_one_core"] for row in rows], "o-", color="#1769a3")

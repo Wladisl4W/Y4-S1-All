@@ -1,0 +1,7 @@
+    checks_total.......: 8221    90.268228/s
+    checks_succeeded...: 100.00% 8221 out of 8221
+    checks_failed......: 0.00%   0 out of 8221
+    http_req_duration..............: avg=70.41ms med=19.17ms p(90)=220.55ms p(95)=393.51ms p(99)=582.02ms min=2.49ms max=859.67ms
+    http_req_failed................: 0.00%  0 out of 8221
+    http_reqs......................: 8221   90.268228/s
+    vus_max........................: 100    min=100       max=100

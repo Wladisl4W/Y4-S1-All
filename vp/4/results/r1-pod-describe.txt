@@ -1,0 +1,84 @@
+Name:             auth-service-5fb8f44995-ztpr7
+Namespace:        vp-lr4
+Priority:         0
+Service Account:  default
+Node:             nemo/10.186.226.238
+Start Time:       Wed, 28 Oct 2026 14:41:49 +0300
+Labels:           app=auth-service
+                  pod-template-hash=5fb8f44995
+Annotations:      <none>
+Status:           Running
+IP:               10.42.0.200
+IPs:
+  IP:           10.42.0.200
+Controlled By:  ReplicaSet/auth-service-5fb8f44995
+Containers:
+  auth-service:
+    Container ID:  containerd://7eb62926bdc92fe3eae0c9f87c801915539b4e7c40c6610e1ae75c21335c1053
+    Image:         python:3.11-slim
+    Image ID:      docker.io/library/python@sha256:da047cb8f9d1d98e5c070f5300ba9f7274e33b8fc0e5be5ed88740aed1b95ba9
+    Port:          5000/TCP
+    Host Port:     0/TCP
+    Command:
+      /bin/sh
+      -c
+    Args:
+      pip install --no-cache-dir -r /app/requirements.txt && exec python /app/app.py
+    State:          Running
+      Started:      Wed, 28 Oct 2026 14:50:42 +0300
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Wed, 28 Oct 2026 14:41:52 +0300
+      Finished:     Wed, 28 Oct 2026 14:50:42 +0300
+    Ready:          True
+    Restart Count:  1
+    Liveness:       http-get http://:5000/health delay=180s timeout=1s period=10s successThreshold=1 failureThreshold=3
+    Readiness:      http-get http://:5000/health delay=5s timeout=1s period=5s successThreshold=1 failureThreshold=3
+    Environment:
+      PIP_INDEX_URL:        https://mirrors.aliyun.com/pypi/simple/
+      JWT_SECRET:           <set to the key 'JWT_SECRET' in secret 'app-secrets'>  Optional: false
+      DB_HOST:              postgres
+      DB_PORT:              5432
+      DB_NAME:              users
+      DB_USER:              postgres
+      DB_PASSWORD:          <set to the key 'POSTGRES_PASSWORD' in secret 'app-secrets'>       Optional: false
+      LOGIN_TITLE:          <set to the key 'LOGIN_TITLE' of config map 'app-config'>          Optional: false
+      WELCOME_TEXT:         <set to the key 'WELCOME_TEXT' of config map 'app-config'>         Optional: false
+      PROFILE_SERVICE_URL:  <set to the key 'PROFILE_SERVICE_URL' of config map 'app-config'>  Optional: false
+    Mounts:
+      /app from source (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6htbv (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  source:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      auth-source
+    Optional:  false
+  kube-api-access-6htbv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                     From               Message
+  ----     ------     ----                    ----               -------
+  Normal   Scheduled  14m                     default-scheduler  Successfully assigned vp-lr4/auth-service-5fb8f44995-ztpr7 to nemo
+  Warning  Unhealthy  6m33s (x3 over 6m54s)   kubelet            spec.containers{auth-service}: Liveness probe failed: Get "http://10.42.0.200:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+  Normal   Killing    6m33s                   kubelet            spec.containers{auth-service}: Container auth-service failed liveness probe, will be restarted
+  Normal   Pulled     6m3s (x2 over 14m)      kubelet            spec.containers{auth-service}: Container image "python:3.11-slim" already present on machine and can be accessed by the pod
+  Normal   Created    6m3s (x2 over 14m)      kubelet            spec.containers{auth-service}: Container created
+  Normal   Started    6m3s (x2 over 14m)      kubelet            spec.containers{auth-service}: Container started
+  Warning  Unhealthy  5m37s (x10 over 14m)    kubelet            spec.containers{auth-service}: Readiness probe failed: Get "http://10.42.0.200:5000/health": dial tcp 10.42.0.200:5000: connect: connection refused
+  Warning  Unhealthy  4m44s (x19 over 6m56s)  kubelet            spec.containers{auth-service}: Readiness probe failed: Get "http://10.42.0.200:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)

@@ -1,0 +1,22 @@
+namespace: exam-kolomiets-prod
+
+auth:
+  replicaCount: 3
+  image:
+    tag: "prod"
+
+profile:
+  replicaCount: 3
+  image:
+    tag: "prod"
+
+notification:
+  replicaCount: 3
+  image:
+    tag: "prod"
+
+config:
+  LOG_LEVEL: "info"
+
+cronjob:
+  schedule: "*/5 * * * *"

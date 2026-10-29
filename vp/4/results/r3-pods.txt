@@ -1,0 +1,4 @@
+NAME                            READY   STATUS    RESTARTS        AGE     IP            NODE   NOMINATED NODE   READINESS GATES
+auth-service-5fb8f44995-2wplb   1/1     Running   0               7m19s   10.42.0.218   nemo   <none>           <none>
+auth-service-5fb8f44995-5xtf2   1/1     Running   0               47s     10.42.0.223   nemo   <none>           <none>
+auth-service-5fb8f44995-ztpr7   1/1     Running   1 (9m13s ago)   18m     10.42.0.200   nemo   <none>           <none>

@@ -129,7 +129,7 @@ paragraph('В auth-service добавлены счётчик HTTP-запросо
 command('helm upgrade --install prometheus ./vendor/kube-prometheus-stack-89.2.0.tgz -n monitoring --create-namespace -f prometheus-values.yaml')
 command('KUBECONFIG=$HOME/.kube/config k3s kubectl apply -f service-monitor.yaml')
 command('KUBECONFIG=$HOME/.kube/config k3s kubectl -n monitoring get pods')
-picture('screenshots/monitoring-pods.png', 'Рисунок 1. Работающие поды мониторинга')
+picture('screenshots/monitoring-pods.png', 'Рисунок 1. Просмотр сохранённого списка подов мониторинга')
 picture('screenshots/prometheus-targets.png', 'Рисунок 2. Target auth-service имеет состояние UP')
 paragraph('В веб-интерфейсе запрос up{namespace="vp-lr2",service="auth-service"} вернул 1. Это значит, что Prometheus смог получить метрики сервиса во время последней проверки.')
 picture('screenshots/prometheus-up.png', 'Рисунок 3. Результат запроса up для auth-service')
@@ -143,7 +143,7 @@ table(['Метрика', 'Что измеряет', 'Тип', 'Единица'],
     ('container_memory_working_set_bytes', 'Рабочая память контейнера', 'Gauge', 'байт'),
     ('process_resident_memory_bytes', 'Физическая память процесса', 'Gauge', 'байт'),
     ('http_requests_total', 'Количество HTTP-запросов', 'Counter', 'запрос'),
-    ('http_request_duration_seconds_bucket', 'Распределение времени обработки', 'Histogram', 'сек'),
+    ('http_request_duration_seconds_bucket', 'Распределение времени обработки', 'Histogram', 'запрос'),
     ('http_errors_total', 'Ошибки по группам 4xx и 5xx', 'Counter', 'ошибка'),
     ('kube_pod_status_phase', 'Фаза Pod: 0 или 1', 'Gauge', 'без единицы'),
     ('kube_pod_container_status_restarts_total', 'Число перезапусков контейнера', 'Counter', 'перезапуск'),
@@ -163,15 +163,18 @@ command('sum(container_memory_working_set_bytes{namespace="vp-lr2",container="au
 command('sum(rate(http_requests_total{namespace="vp-lr2",route="index"}[15s]))')
 command('sum(rate(http_errors_total{namespace="vp-lr2",group="5xx"}[15s])) or vector(0)')
 command('1000 * histogram_quantile(0.95, sum by (le) (increase(http_request_duration_seconds_bucket{namespace="vp-lr2",route="index"}[40s])))')
-paragraph('Ниже показаны настоящие снимки терминала. На них открыт сохранённый вывод именно этих трёх прогонов, а не запуск теста в момент снимка.')
+paragraph('На снимках терминала показаны каталог запуска, команда чтения сохранённого вывода k6 и результаты трёх прогонов. Снимки сделаны после завершения тестов.')
 for number, vus in enumerate((10, 50, 200), 4):
-    picture(f'screenshots/vu{vus}.png', f'Рисунок {number}. Сохранённый вывод k6 для {vus} VU')
+    picture(f'screenshots/vu{vus}.png', f'Рисунок {number}. Просмотр сохранённого вывода k6 для {vus} VU')
+
+paragraph('Сохранённые ответы Prometheus на запрос sum(rate(http_requests_total{namespace="vp-lr2",route="index"}[15s])) содержат точки временного ряда во время каждого прогона. По ним построен график ниже. Это график по ответам Prometheus, а не снимок его веб-интерфейса: локальный кластер сейчас остановлен.')
+picture('prometheus-rps-time.png', 'Рисунок 7. Изменение RPS во времени по сохранённым ответам Prometheus')
 
 heading('4. Сравнение и анализ')
 paragraph(f"Для 200 VU k6 показал p95 = {rows[2]['p95_k6_ms']:.2f} мс, а Prometheus = {rows[2]['p95_prometheus_ms']:.2f} мс. Разница равна {comparison['difference_ms']:.2f} мс, или {comparison['difference_percent_of_k6']:.2f} % от значения k6. k6 измеряет полный ответ клиенту. Метрика приложения измеряет только обработку внутри Flask. Кроме того, Prometheus оценивает квантиль по бакетам за окно 40 секунд, а k6 считает по ответам во время 30-секундного теста. Поэтому значения напрямую не совпадают.")
-picture('p95.png', 'Рисунок 7. Изменение p95 при росте нагрузки')
-picture('resources.png', 'Рисунок 8. Средние CPU и память auth-service')
-picture('rps.png', 'Рисунок 9. Пропускная способность по данным k6')
+picture('p95.png', 'Рисунок 8. Изменение p95 при росте нагрузки')
+picture('resources.png', 'Рисунок 9. Средние CPU и память auth-service')
+picture('rps.png', 'Рисунок 10. Пропускная способность по данным k6')
 paragraph('Ухудшение заметно на 200 VU: p95 k6 вырос с 49,96 до 228,16 мс, а RPS вырос с 48,56 до 176,09, то есть не пропорционально числу VU. CPU вырос с 33,3 до 115,4 % одного ядра. Память изменилась мало: с 31,4 до 33,5 МиБ. Ошибок не было. Ранее, уже на 50 VU, p95 вырос с 25,07 до 49,96 мс, но более резкий рост виден между 50 и 200 VU.')
 paragraph('Моя гипотеза: при высокой нагрузке запросы дольше ждут до начала обработки во Flask или в сетевом стеке. На это указывает большая разница между p95 k6 и p95 приложения. Рост CPU тоже может участвовать, но по этим данным нельзя доказать, что процессор исчерпан: контейнер не ограничен одним ядром. Для проверки гипотезы нужны дополнительные измерения очереди, профилирование и повторные прогоны.')
 
@@ -202,3 +205,6 @@ field.set(qn('w:instr'), 'PAGE')
 footer._p.append(field)
 
 doc.save(folder / 'ЛР2_отчёт.docx')
+
+import subprocess
+subprocess.run(['python3', str(folder / 'sync_odt.py')], check=True)

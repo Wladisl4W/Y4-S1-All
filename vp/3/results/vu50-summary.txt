@@ -1,0 +1,7 @@
+    checks_total.......: 4425    48.648373/s
+    checks_succeeded...: 100.00% 4425 out of 4425
+    checks_failed......: 0.00%   0 out of 4425
+    http_req_duration..............: avg=17.82ms med=9.42ms p(90)=36.41ms p(95)=59.94ms p(99)=145.96ms min=2.36ms max=249.79ms
+    http_req_failed................: 0.00%  0 out of 4425
+    http_reqs......................: 4425   48.648373/s
+    vus_max........................: 50     min=50        max=50

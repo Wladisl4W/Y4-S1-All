@@ -1,0 +1,97 @@
+namespace: exam-kolomiets
+
+auth:
+  replicaCount: 2
+  image:
+    repository: auth-service
+    tag: "latest"
+    pullPolicy: Never
+  service:
+    type: NodePort
+    port: 5000
+    nodePort: 30080
+  probes:
+    liveness:
+      initialDelaySeconds: 30
+      periodSeconds: 10
+    readiness:
+      initialDelaySeconds: 5
+      periodSeconds: 5
+
+profile:
+  replicaCount: 2
+  image:
+    repository: profile-service
+    tag: "latest"
+    pullPolicy: Never
+  service:
+    type: ClusterIP
+    port: 5001
+  probes:
+    liveness:
+      initialDelaySeconds: 30
+      periodSeconds: 10
+    readiness:
+      initialDelaySeconds: 5
+      periodSeconds: 5
+
+notification:
+  replicaCount: 2
+  image:
+    repository: notification-service
+    tag: "latest"
+    pullPolicy: Never
+  service:
+    type: ClusterIP
+    port: 5002
+  probes:
+    liveness:
+      initialDelaySeconds: 30
+      periodSeconds: 10
+    readiness:
+      initialDelaySeconds: 5
+      periodSeconds: 5
+
+postgres:
+  image:
+    repository: postgres
+    tag: "15-alpine"
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 5432
+  storage:
+    size: 1Gi
+  probes:
+    liveness:
+      initialDelaySeconds: 30
+      periodSeconds: 10
+    readiness:
+      initialDelaySeconds: 5
+      periodSeconds: 5
+
+config:
+  LOGIN_TITLE: "Вход в систему"
+  WELCOME_TEXT: "Добро пожаловать!"
+  PROFILE_TITLE: "Профиль пользователя"
+  PROFILE_SERVICE_URL: "http://profile-service:5001"
+  NOTIFICATION_SERVICE_URL: "http://notification-service:5002"
+  AUTH_SERVICE_URL: "http://auth-service:5000"
+  LOG_LEVEL: "info"
+
+secrets:
+  POSTGRES_PASSWORD: "cGFzc3dvcmQxMjM="
+  JWT_SECRET: "c2VjcmV0LWp3dC1rZXktZm9yLWV4YW0="
+
+ingress:
+  enabled: true
+  className: nginx
+  host: app-1.example.com
+  tls: true
+
+cronjob:
+  schedule: "*/5 * * * *"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""

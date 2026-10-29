@@ -1,0 +1,7 @@
+    checks_total.......: 1500    48.558915/s
+    checks_succeeded...: 100.00% 1500 out of 1500
+    checks_failed......: 0.00%   0 out of 1500
+    http_req_duration..............: avg=18.06ms med=8.08ms p(90)=22.12ms p(95)=49.96ms p(99)=286.2ms min=2.5ms max=463.25ms
+    http_req_failed................: 0.00%  0 out of 1500
+    http_reqs......................: 1500   48.558915/s
+    vus_max........................: 50     min=50        max=50

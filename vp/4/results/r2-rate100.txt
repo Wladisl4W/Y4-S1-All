@@ -1,0 +1,978 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: test-scaling.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 400 max VUs, 1m30s max duration (incl. graceful stop):
+              * scaling: 100.00 iterations/s for 1m0s (maxVUs: 50-400, gracefulStop: 30s)
+
+
+running (0m01.0s), 061/061 VUs, 24 complete and 0 interrupted iterations
+scaling   [   2% ] 061/061 VUs  0m01.0s/1m0s  100.00 iters/s
+
+running (0m02.0s), 089/091 VUs, 66 complete and 0 interrupted iterations
+scaling   [   3% ] 089/091 VUs  0m02.0s/1m0s  100.00 iters/s
+
+running (0m03.0s), 107/108 VUs, 129 complete and 0 interrupted iterations
+scaling   [   5% ] 107/108 VUs  0m03.0s/1m0s  100.00 iters/s
+
+running (0m04.0s), 122/124 VUs, 198 complete and 0 interrupted iterations
+scaling   [   7% ] 122/124 VUs  0m04.0s/1m0s  100.00 iters/s
+
+running (0m05.0s), 142/144 VUs, 258 complete and 0 interrupted iterations
+scaling   [   8% ] 142/144 VUs  0m05.0s/1m0s  100.00 iters/s
+
+running (0m06.0s), 158/159 VUs, 326 complete and 0 interrupted iterations
+scaling   [  10% ] 158/159 VUs  0m06.0s/1m0s  100.00 iters/s
+
+running (0m07.0s), 179/180 VUs, 384 complete and 0 interrupted iterations
+scaling   [  12% ] 179/180 VUs  0m07.0s/1m0s  100.00 iters/s
+
+running (0m08.0s), 194/196 VUs, 453 complete and 0 interrupted iterations
+scaling   [  13% ] 194/196 VUs  0m08.0s/1m0s  100.00 iters/s
+
+running (0m09.0s), 212/213 VUs, 518 complete and 0 interrupted iterations
+scaling   [  15% ] 212/213 VUs  0m09.0s/1m0s  100.00 iters/s
+
+running (0m10.0s), 225/227 VUs, 591 complete and 0 interrupted iterations
+scaling   [  17% ] 225/227 VUs  0m10.0s/1m0s  100.00 iters/s
+
+running (0m11.0s), 248/249 VUs, 646 complete and 0 interrupted iterations
+scaling   [  18% ] 248/249 VUs  0m11.0s/1m0s  100.00 iters/s
+
+running (0m12.0s), 264/264 VUs, 715 complete and 0 interrupted iterations
+scaling   [  20% ] 264/264 VUs  0m12.0s/1m0s  100.00 iters/s
+
+running (0m13.0s), 282/283 VUs, 778 complete and 0 interrupted iterations
+scaling   [  22% ] 282/283 VUs  0m13.0s/1m0s  100.00 iters/s
+
+running (0m14.0s), 299/299 VUs, 845 complete and 0 interrupted iterations
+scaling   [  23% ] 299/299 VUs  0m14.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m15.0s), 280/306 VUs, 957 complete and 0 interrupted iterations
+scaling   [  25% ] 280/306 VUs  0m15.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m16.0s), 224/306 VUs, 1113 complete and 0 interrupted iterations
+scaling   [  27% ] 224/306 VUs  0m16.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m17.0s), 189/306 VUs, 1248 complete and 0 interrupted iterations
+scaling   [  28% ] 189/306 VUs  0m17.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:57:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m18.0s), 215/306 VUs, 1322 complete and 0 interrupted iterations
+scaling   [  30% ] 215/306 VUs  0m18.0s/1m0s  100.00 iters/s
+
+running (0m19.0s), 247/306 VUs, 1390 complete and 0 interrupted iterations
+scaling   [  32% ] 247/306 VUs  0m19.0s/1m0s  100.00 iters/s
+
+running (0m20.0s), 284/306 VUs, 1453 complete and 0 interrupted iterations
+scaling   [  33% ] 284/306 VUs  0m20.0s/1m0s  100.00 iters/s
+
+running (0m21.0s), 314/317 VUs, 1512 complete and 0 interrupted iterations
+scaling   [  35% ] 314/317 VUs  0m21.0s/1m0s  100.00 iters/s
+
+running (0m22.0s), 336/337 VUs, 1570 complete and 0 interrupted iterations
+scaling   [  37% ] 336/337 VUs  0m22.0s/1m0s  100.00 iters/s
+
+running (0m23.0s), 354/354 VUs, 1633 complete and 0 interrupted iterations
+scaling   [  38% ] 354/354 VUs  0m23.0s/1m0s  100.00 iters/s
+
+running (0m24.0s), 388/388 VUs, 1665 complete and 0 interrupted iterations
+scaling   [  40% ] 388/388 VUs  0m24.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:57:56+03:00" level=warning msg="Insufficient VUs, reached 400 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=scaling
+
+running (0m25.0s), 399/400 VUs, 1709 complete and 0 interrupted iterations
+scaling   [  42% ] 399/400 VUs  0m25.0s/1m0s  100.00 iters/s
+
+running (0m26.0s), 400/400 VUs, 1759 complete and 0 interrupted iterations
+scaling   [  43% ] 400/400 VUs  0m26.0s/1m0s  100.00 iters/s
+
+running (0m27.0s), 398/400 VUs, 1821 complete and 0 interrupted iterations
+scaling   [  45% ] 398/400 VUs  0m27.0s/1m0s  100.00 iters/s
+
+running (0m28.0s), 400/400 VUs, 1877 complete and 0 interrupted iterations
+scaling   [  47% ] 400/400 VUs  0m28.0s/1m0s  100.00 iters/s
+
+running (0m29.0s), 400/400 VUs, 1932 complete and 0 interrupted iterations
+scaling   [  48% ] 400/400 VUs  0m29.0s/1m0s  100.00 iters/s
+
+running (0m30.0s), 398/400 VUs, 1995 complete and 0 interrupted iterations
+scaling   [  50% ] 398/400 VUs  0m30.0s/1m0s  100.00 iters/s
+
+running (0m31.0s), 400/400 VUs, 2056 complete and 0 interrupted iterations
+scaling   [  52% ] 400/400 VUs  0m31.0s/1m0s  100.00 iters/s
+
+running (0m32.0s), 398/400 VUs, 2115 complete and 0 interrupted iterations
+scaling   [  53% ] 398/400 VUs  0m32.0s/1m0s  100.00 iters/s
+
+running (0m33.0s), 398/400 VUs, 2178 complete and 0 interrupted iterations
+scaling   [  55% ] 398/400 VUs  0m33.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37432->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37430->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m34.0s), 394/400 VUs, 2268 complete and 0 interrupted iterations
+scaling   [  57% ] 394/400 VUs  0m34.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m35.0s), 389/400 VUs, 2373 complete and 0 interrupted iterations
+scaling   [  58% ] 389/400 VUs  0m35.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38940->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38958->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38164->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m36.0s), 379/400 VUs, 2483 complete and 0 interrupted iterations
+scaling   [  60% ] 379/400 VUs  0m36.0s/1m0s  100.00 iters/s
+
+running (0m37.0s), 400/400 VUs, 2546 complete and 0 interrupted iterations
+scaling   [  62% ] 400/400 VUs  0m37.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:09+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:52914->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:09+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53690->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:09+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53488->10.186.226.238:30083: read: connection reset by peer"
+
+running (0m38.0s), 400/400 VUs, 2617 complete and 0 interrupted iterations
+scaling   [  63% ] 400/400 VUs  0m38.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53554->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37768->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37536->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37510->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38440->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54170->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53590->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:52836->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38826->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37554->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54034->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38444->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:39194->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38486->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54032->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38456->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:10+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:52838->10.186.226.238:30083: read: connection reset by peer"
+
+running (0m39.0s), 398/400 VUs, 2696 complete and 0 interrupted iterations
+scaling   [  65% ] 398/400 VUs  0m39.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:11+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54400->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:11+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53840->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:11+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53226->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:11+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:39000->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:11+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53906->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:11+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53208->10.186.226.238:30083: read: connection reset by peer"
+
+running (0m40.0s), 400/400 VUs, 2763 complete and 0 interrupted iterations
+scaling   [  67% ] 400/400 VUs  0m40.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38258->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53930->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55406->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55022->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53236->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38248->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53924->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:53244->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55002->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55018->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38254->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54540->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:12+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55554->10.186.226.238:30083: read: connection reset by peer"
+
+running (0m41.0s), 390/400 VUs, 2838 complete and 0 interrupted iterations
+scaling   [  68% ] 390/400 VUs  0m41.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:13+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54288->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:13+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54300->10.186.226.238:30083: read: connection reset by peer"
+
+running (0m42.0s), 400/400 VUs, 2902 complete and 0 interrupted iterations
+scaling   [  70% ] 400/400 VUs  0m42.0s/1m0s  100.00 iters/s
+
+running (0m43.0s), 400/400 VUs, 2966 complete and 0 interrupted iterations
+scaling   [  72% ] 400/400 VUs  0m43.0s/1m0s  100.00 iters/s
+
+running (0m44.0s), 399/400 VUs, 3031 complete and 0 interrupted iterations
+scaling   [  73% ] 399/400 VUs  0m44.0s/1m0s  100.00 iters/s
+
+running (0m45.0s), 399/400 VUs, 3082 complete and 0 interrupted iterations
+scaling   [  75% ] 399/400 VUs  0m45.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m46.0s), 386/400 VUs, 3148 complete and 0 interrupted iterations
+scaling   [  77% ] 386/400 VUs  0m46.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:17+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m47.0s), 355/400 VUs, 3279 complete and 0 interrupted iterations
+scaling   [  78% ] 355/400 VUs  0m47.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m48.0s), 323/400 VUs, 3411 complete and 0 interrupted iterations
+scaling   [  80% ] 323/400 VUs  0m48.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+time="2026-10-28T14:58:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": dial tcp 10.186.226.238:30083: connect: connection refused"
+
+running (0m49.0s), 351/400 VUs, 3483 complete and 0 interrupted iterations
+scaling   [  82% ] 351/400 VUs  0m49.0s/1m0s  100.00 iters/s
+
+running (0m50.0s), 395/400 VUs, 3539 complete and 0 interrupted iterations
+scaling   [  83% ] 395/400 VUs  0m50.0s/1m0s  100.00 iters/s
+
+running (0m51.0s), 397/400 VUs, 3599 complete and 0 interrupted iterations
+scaling   [  85% ] 397/400 VUs  0m51.0s/1m0s  100.00 iters/s
+
+running (0m52.0s), 399/400 VUs, 3656 complete and 0 interrupted iterations
+scaling   [  87% ] 399/400 VUs  0m52.0s/1m0s  100.00 iters/s
+
+running (0m53.0s), 399/400 VUs, 3727 complete and 0 interrupted iterations
+scaling   [  88% ] 399/400 VUs  0m53.0s/1m0s  100.00 iters/s
+
+running (0m54.0s), 399/400 VUs, 3790 complete and 0 interrupted iterations
+scaling   [  90% ] 399/400 VUs  0m54.0s/1m0s  100.00 iters/s
+
+running (0m55.0s), 399/400 VUs, 3861 complete and 0 interrupted iterations
+scaling   [  92% ] 399/400 VUs  0m55.0s/1m0s  100.00 iters/s
+time="2026-10-28T14:58:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37868->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:39112->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:38148->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:37384->10.186.226.238:30083: read: connection reset by peer"
+
+running (0m56.0s), 398/400 VUs, 3926 complete and 0 interrupted iterations
+scaling   [  93% ] 398/400 VUs  0m56.0s/1m0s  100.00 iters/s
+
+running (0m57.0s), 400/400 VUs, 3990 complete and 0 interrupted iterations
+scaling   [  95% ] 400/400 VUs  0m57.0s/1m0s  100.00 iters/s
+
+running (0m58.0s), 400/400 VUs, 4041 complete and 0 interrupted iterations
+scaling   [  97% ] 400/400 VUs  0m58.0s/1m0s  100.00 iters/s
+
+running (0m59.0s), 400/400 VUs, 4083 complete and 0 interrupted iterations
+scaling   [  98% ] 400/400 VUs  0m59.0s/1m0s  100.00 iters/s
+
+running (1m00.0s), 400/400 VUs, 4126 complete and 0 interrupted iterations
+scaling   [ 100% ] 400/400 VUs  1m00.0s/1m0s  100.00 iters/s
+
+running (1m01.0s), 367/400 VUs, 4160 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m02.0s), 330/400 VUs, 4197 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m03.0s), 293/400 VUs, 4234 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m04.0s), 256/400 VUs, 4271 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m05.0s), 219/400 VUs, 4308 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m06.0s), 185/400 VUs, 4342 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m07.0s), 147/400 VUs, 4380 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+time="2026-10-28T14:58:38+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55092->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:38+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55088->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:38+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55074->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:38+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:45682->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:38+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55072->10.186.226.238:30083: read: connection reset by peer"
+
+running (1m08.0s), 108/400 VUs, 4419 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m09.0s), 080/400 VUs, 4447 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:46354->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54542->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:54538->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:55130->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:45760->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:45734->10.186.226.238:30083: read: connection reset by peer"
+time="2026-10-28T14:58:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.186.226.238:30083/work?iterations=20000\": read tcp 10.186.226.238:46352->10.186.226.238:30083: read: connection reset by peer"
+
+running (1m10.0s), 041/400 VUs, 4486 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m11.0s), 020/400 VUs, 4507 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+running (1m12.0s), 007/400 VUs, 4520 complete and 0 interrupted iterations
+scaling ↓ [ 100% ] 400/400 VUs  1m0s  100.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=9.9s
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=15.55%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 4527   62.330496/s
+    checks_succeeded...: 84.44% 3823 out of 4527
+    checks_failed......: 15.55% 704 out of 4527
+
+    ✗ status is 200
+      ↳  84% — ✓ 3823 / ✗ 704
+
+    HTTP
+    http_req_duration..............: avg=3.3s  min=0s       med=3.35s max=28.17s p(90)=5.41s  p(95)=9.9s  
+      { expected_response:true }...: avg=3.69s min=23.89ms  med=3.71s max=28.17s p(90)=5.53s  p(95)=7.76s 
+    http_req_failed................: 15.55% 704 out of 4527
+    http_reqs......................: 4527   62.330496/s
+
+    EXECUTION
+    dropped_iterations.............: 1474   20.294931/s
+    iteration_duration.............: avg=4.77s min=379.18µs med=3.58s max=30.25s p(90)=12.46s p(95)=15.94s
+    iterations.....................: 4527   62.330496/s
+    vus............................: 7      min=7           max=400
+    vus_max........................: 400    min=61          max=400
+
+    NETWORK
+    data_received..................: 1.2 MB 17 kB/s
+    data_sent......................: 377 kB 5.2 kB/s
+
+
+
+
+running (1m12.6s), 000/400 VUs, 4527 complete and 0 interrupted iterations
+scaling ✓ [ 100% ] 000/400 VUs  1m0s  100.00 iters/s
+time="2026-10-28T14:58:45+03:00" level=error msg="thresholds on metrics 'http_req_duration, http_req_failed' have been crossed"

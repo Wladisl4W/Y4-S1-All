@@ -1,0 +1,7 @@
+    checks_total.......: 16873   185.394173/s
+    checks_succeeded...: 100.00% 16873 out of 16873
+    checks_failed......: 0.00%   0 out of 16873
+    http_req_duration..............: avg=66.63ms med=14.86ms p(90)=233.99ms p(95)=342.78ms p(99)=468.74ms min=2.4ms max=610.74ms
+    http_req_failed................: 0.00%  0 out of 16873
+    http_reqs......................: 16873  185.394173/s
+    vus_max........................: 200    min=200        max=200

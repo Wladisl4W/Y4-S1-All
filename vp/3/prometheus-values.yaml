@@ -1,0 +1,20 @@
+grafana:
+  enabled: true
+  sidecar:
+    datasources:
+      url: http://10.42.0.122:9090/
+  persistence:
+    enabled: true
+    storageClassName: local-path
+    size: 1Gi
+
+alertmanager:
+  enabled: false
+
+kubelet:
+  serviceMonitor:
+    cAdvisorInterval: 5s
+
+prometheus:
+  prometheusSpec:
+    scrapeInterval: 5s

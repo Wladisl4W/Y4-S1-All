@@ -1,0 +1,53 @@
+{
+  "original_rows": 1338,
+  "duplicates_removed": 1,
+  "rows_after_cleaning": 1337,
+  "missing_total": 0,
+  "iqr_upper_charges": 34524.777625,
+  "iqr_high_count": 139,
+  "iqr_high_smokers": 136,
+  "invalid_rows_removed": 0,
+  "train_rows": 935,
+  "test_rows": 402,
+  "correlations_train": {
+    "smoker_yes": 0.7760462537390116,
+    "age": 0.2867558912024157,
+    "bmi": 0.16015344369274187,
+    "children": 0.09644634553924351,
+    "sex_male": 0.0549960264123683,
+    "region_southeast": 0.05241909289955542,
+    "region_northwest": -0.048728355890084805,
+    "region_southwest": -0.03399723864093118
+  },
+  "selected_features": [
+    "smoker_yes",
+    "age",
+    "bmi"
+  ],
+  "cv_mae_folds": [
+    4287.048931911285,
+    4087.5220026383486,
+    4315.219617361736,
+    4273.628991654191,
+    4138.774819466997
+  ],
+  "cv_r2_folds": [
+    0.7327879735345849,
+    0.7192757860970715,
+    0.739412358513087,
+    0.6076088750452184,
+    0.8086771430442923
+  ],
+  "cv_mae_mean": 4220.438872606511,
+  "cv_r2_mean": 0.7215524272468509,
+  "intercept": -11248.926917311139,
+  "coefficients": {
+    "smoker_yes": 22905.171374508158,
+    "age": 255.86007322725675,
+    "bmi": 311.90764085260184
+  },
+  "test_mae": 4216.004137504101,
+  "test_r2": 0.770169351656322,
+  "example_actual": 8688.85885,
+  "example_prediction": 8310.817204620773
+}
