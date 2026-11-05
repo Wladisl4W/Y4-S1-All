@@ -1,0 +1,7 @@
+PREFIX : <https://example.org/intonation-study#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?id ?title ?notes ?seconds WHERE {
+  ?exercise a ?type ; :exerciseId ?id ; :title ?title ;
+    :noteCount ?notes ; :durationSeconds ?seconds .
+  ?type rdfs:subClassOf* :Exercise .
+} ORDER BY ?id

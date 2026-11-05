@@ -1,0 +1,6 @@
+Проверка OWL RL; ни один из перечисленных типов не задан экземплярам вручную.
+ExerciseInCatalog: ascending, basicSet, descending, threeNotes, triad
+PatternWithRoute: ascending
+SetWithPattern: basicSet
+ModeWithExercise: warmup
+ApplicationWithHistory: trainer

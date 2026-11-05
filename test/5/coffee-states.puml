@@ -1,0 +1,39 @@
+@startuml
+' Основные переходы взяты из явного перечня задания ЛР5.
+' Долгое POWER описано отдельным общим правилом, чтобы не загромождать рисунок.
+skinparam backgroundColor white
+skinparam linetype ortho
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 20
+skinparam ArrowColor #284B63
+skinparam StateBorderColor #284B63
+skinparam StateBackgroundColor #EEF5FA
+skinparam StateFontColor #172B3A
+skinparam StateFontSize 23
+skinparam ArrowFontSize 18
+skinparam nodesep 90
+skinparam NoteBackgroundColor #F8F8F2
+skinparam NoteBorderColor #B5B5A5
+hide empty description
+
+state "Выключена\nOff" as Off
+state "Готова\nReady" as Ready
+state "Приготовление\nBrewing" as Brewing
+state "Ошибка\nError" as Error
+
+[*] --> Off
+Off --> Ready : POWER; ресурсы есть
+Ready -down-> Brewing : START
+Brewing -up-> Ready : 2 минуты
+Ready -right-> Error
+Error -left-> Ready
+
+note bottom of Error
+  Ready → Error: нет воды или зерен
+  Error → Ready: долить воду и добавить зерна
+end note
+note bottom of Off
+  Из любого состояния:
+  POWER 3 с → Off
+end note
+@enduml

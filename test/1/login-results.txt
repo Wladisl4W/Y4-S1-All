@@ -1,0 +1,5 @@
+URL https://the-internet.herokuapp.com/login HTTP 200
+username present True type text
+password present True type password
+login button True
+forgot password link False

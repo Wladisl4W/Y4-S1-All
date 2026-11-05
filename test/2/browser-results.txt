@@ -1,0 +1,14 @@
+login-form: HTTP 200; URL https://the-internet.herokuapp.com/login; title The Internet; screenshot 1/screenshots/login-form.png
+login-valid: You logged into a secure area!
+×
+login-valid: HTTP 200; URL https://the-internet.herokuapp.com/secure; title The Internet; screenshot 1/screenshots/login-valid.png
+login-invalid: Your password is invalid!
+×
+login-invalid: HTTP 200; URL https://the-internet.herokuapp.com/login; title The Internet; screenshot 1/screenshots/login-invalid.png
+broken-images: HTTP 200; URL https://the-internet.herokuapp.com/broken_images; title The Internet; screenshot 2/screenshots/broken-images.png
+typos: visible on reload 1: Sometimes you'll see a typo, other times you won,t.
+typos: HTTP 200; URL https://the-internet.herokuapp.com/typos; title The Internet; screenshot 2/screenshots/typos.png
+status-500: HTTP 500; URL https://the-internet.herokuapp.com/status_codes/500; title The Internet; screenshot 2/screenshots/status-500.png
+books: HTTP 200; URL https://demowebshop.tricentis.com/books; title Demo Web Shop. Books; screenshot 6/screenshots/books.png
+product: HTTP 200; URL https://demowebshop.tricentis.com/computing-and-internet; title Demo Web Shop. Computing and Internet; screenshot 6/screenshots/product.png
+search: HTTP 200; URL https://demowebshop.tricentis.com/search?q=Computing; title Demo Web Shop. Search; screenshot 6/screenshots/search.png

@@ -1,0 +1,1 @@
+Enter the length of side a: Enter the length of side b: Enter the length of side c: This is a Right triangle.

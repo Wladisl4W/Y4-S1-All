@@ -1,0 +1,4 @@
+Проверка ontology.ttl парсером RDFLib (Turtle): успешно.
+Число исходных троек: 154.
+Источники фактов: Exercise.java, ExerciseCatalog.java, WarmupRoute.java, README.md и docs/warmups.md дипломного проекта.
+Данные о пении пользователя не импортировались.

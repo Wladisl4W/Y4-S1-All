@@ -1,0 +1,9 @@
+/broken_images HTTP 200 URL https://the-internet.herokuapp.com/broken_images
+image 1 https://the-internet.herokuapp.com/img/forkme_right_sauce.svg HTTP 200 type image/svg+xml
+image 2 https://the-internet.herokuapp.com/asdf.jpg HTTP 404 type text/html;charset=utf-8
+image 3 https://the-internet.herokuapp.com/hjkl.jpg HTTP 404 type text/html;charset=utf-8
+image 4 https://the-internet.herokuapp.com/img/avatar-blank.jpg HTTP 200 type image/jpeg
+/status_codes/500 HTTP 500 URL https://the-internet.herokuapp.com/status_codes/500
+/typos HTTP 200 URL https://the-internet.herokuapp.com/typos
+paragraph This example demonstrates a typo being introduced. It does it randomly on each page load. Sometimes you'll see a typo, other times you won't.
+paragraph Sometimes you'll see a typo, other times you won't.

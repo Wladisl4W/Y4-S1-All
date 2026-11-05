@@ -1,0 +1,8 @@
+PAGE / HTTP 200 TITLE Demo Web Shop
+PAGE /books HTTP 200 TITLE Demo Web Shop. Books
+PRODUCTS 6
+FIRST PRODUCT Computing and Internet URL https://demowebshop.tricentis.com/computing-and-internet HTTP 200
+PRICE Price: 10.00
+PAGE /search?q=Computing HTTP 200 TITLE Demo Web Shop. Search
+SEARCH PRODUCTS 2
+NAMES ['Computing and Internet', 'Copy of Computing and Internet EX']

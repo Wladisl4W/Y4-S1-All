@@ -1,0 +1,5 @@
+PREFIX : <https://example.org/intonation-study#>
+SELECT ?pattern ?root ?climb WHERE {
+  ?p a :Pattern ; :title ?pattern ; :hasRoute ?route .
+  ?route :rootMidi ?root ; :climbSemitones ?climb .
+} ORDER BY ?pattern ?climb

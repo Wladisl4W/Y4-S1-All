@@ -1,0 +1,61 @@
+@prefix : <https://example.org/intonation-study#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/intonation-study> a owl:Ontology ;
+  rdfs:label "Учебная модель тренажёра интонации"@ru ;
+  rdfs:comment "Факты о каталоге и настройках взяты из исходного кода дипломного приложения; результатов пения здесь нет."@ru .
+
+:Application a owl:Class ; rdfs:label "Приложение"@ru .
+:Mode a owl:Class ; rdfs:label "Режим"@ru .
+:Exercise a owl:Class ; rdfs:label "Распевка"@ru .
+:Pattern a owl:Class ; rdfs:subClassOf :Exercise ; rdfs:label "Паттерн"@ru .
+:Set a owl:Class ; rdfs:subClassOf :Exercise ; rdfs:label "Набор"@ru .
+:Route a owl:Class ; rdfs:label "Маршрут"@ru .
+:History a owl:Class ; rdfs:label "История занятий"@ru .
+:SongMode a owl:Class ; rdfs:subClassOf :Mode ; rdfs:label "Режим песен"@ru .
+:LiveMode a owl:Class ; rdfs:subClassOf :Mode ; rdfs:label "Живой голос"@ru .
+:WarmupMode a owl:Class ; rdfs:subClassOf :Mode ; rdfs:label "Режим распевок"@ru .
+
+:hasMode a owl:ObjectProperty ; rdfs:domain :Application ; rdfs:range :Mode .
+:hasExercise a owl:ObjectProperty ; rdfs:domain :WarmupMode ; rdfs:range :Exercise .
+:hasPattern a owl:ObjectProperty ; rdfs:domain :Set ; rdfs:range :Pattern .
+:hasRoute a owl:ObjectProperty ; rdfs:domain :Pattern ; rdfs:range :Route .
+:hasHistory a owl:ObjectProperty ; rdfs:domain :Application ; rdfs:range :History .
+:title a owl:DatatypeProperty ; rdfs:range xsd:string .
+:exerciseId a owl:DatatypeProperty ; rdfs:range xsd:string .
+:noteCount a owl:DatatypeProperty ; rdfs:domain :Exercise ; rdfs:range xsd:integer .
+:secondsPerNote a owl:DatatypeProperty ; rdfs:domain :Exercise ; rdfs:range xsd:decimal .
+:durationSeconds a owl:DatatypeProperty ; rdfs:domain :Exercise ; rdfs:range xsd:decimal .
+:lowestMidi a owl:DatatypeProperty ; rdfs:domain :Pattern ; rdfs:range xsd:integer .
+:highestMidi a owl:DatatypeProperty ; rdfs:domain :Pattern ; rdfs:range xsd:integer .
+:rootMidi a owl:DatatypeProperty ; rdfs:domain :Route ; rdfs:range xsd:integer .
+:climbSemitones a owl:DatatypeProperty ; rdfs:domain :Route ; rdfs:range xsd:integer .
+
+:trainer a :Application, owl:NamedIndividual ; rdfs:label "Тренажёр интонации"@ru ;
+  :hasMode :live, :warmup, :songs ; :hasHistory :localHistory .
+:live a :LiveMode, owl:NamedIndividual ; rdfs:label "Живой голос"@ru .
+:warmup a :WarmupMode, owl:NamedIndividual ; rdfs:label "Распевки"@ru ;
+  :hasExercise :ascending, :descending, :threeNotes, :triad, :basicSet .
+:songs a :SongMode, owl:NamedIndividual ; rdfs:label "Песни, эксперимент"@ru .
+:localHistory a :History, owl:NamedIndividual ;
+  rdfs:comment "Приложение сохраняет результаты в локальный progress.csv; содержимое файла в модель не импортируется."@ru .
+
+:ascending a :Pattern, owl:NamedIndividual ; :exerciseId "ascending" ; :title "Лесенка вверх" ;
+  :noteCount 5 ; :secondsPerNote 2.0 ; :durationSeconds 10.0 ; :lowestMidi 60 ; :highestMidi 67 ;
+  :hasRoute :ascendingRoute0, :ascendingRoute2, :ascendingRoute4 .
+:descending a :Pattern, owl:NamedIndividual ; :exerciseId "descending" ; :title "Лесенка вниз" ;
+  :noteCount 5 ; :secondsPerNote 2.0 ; :durationSeconds 10.0 ; :lowestMidi 60 ; :highestMidi 67 .
+:threeNotes a :Pattern, owl:NamedIndividual ; :exerciseId "three_notes" ; :title "Пирамидка" ;
+  :noteCount 5 ; :secondsPerNote 2.0 ; :durationSeconds 10.0 ; :lowestMidi 60 ; :highestMidi 64 .
+:triad a :Pattern, owl:NamedIndividual ; :exerciseId "triad" ; :title "Арпеджио" ;
+  :noteCount 5 ; :secondsPerNote 2.0 ; :durationSeconds 10.0 ; :lowestMidi 60 ; :highestMidi 67 .
+:basicSet a :Set, owl:NamedIndividual ; :exerciseId "basic_set" ; :title "Основной набор" ;
+  :noteCount 23 ; :secondsPerNote 2.0 ; :durationSeconds 46.0 ;
+  :hasPattern :ascending, :descending, :threeNotes, :triad .
+
+:ascendingRoute0 a :Route, owl:NamedIndividual ; :rootMidi 60 ; :climbSemitones 0 .
+:ascendingRoute2 a :Route, owl:NamedIndividual ; :rootMidi 60 ; :climbSemitones 2 .
+:ascendingRoute4 a :Route, owl:NamedIndividual ; :rootMidi 60 ; :climbSemitones 4 .

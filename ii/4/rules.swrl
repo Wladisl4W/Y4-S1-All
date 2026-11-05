@@ -1,0 +1,9 @@
+# Правила проверяют характеристики каталога, а не результаты реального пения.
+# Вывод SWRL в установленном окружении не запускался.
+Exercise(?e) ^ noteCount(?e, ?n) ^ swrlb:lessThanOrEqual(?n, 0) -> SuspiciousDescription(?e)
+Exercise(?e) ^ secondsPerNote(?e, ?s) ^ swrlb:lessThanOrEqual(?s, 0) -> SuspiciousDescription(?e)
+Route(?r) ^ rootMidi(?r, ?m) ^ swrlb:lessThan(?m, 36) -> SuspiciousDescription(?r)
+Route(?r) ^ rootMidi(?r, ?m) ^ swrlb:greaterThan(?m, 72) -> SuspiciousDescription(?r)
+Route(?r) ^ climbSemitones(?r, ?c) ^ swrlb:notEqual(?c, 0) ^ swrlb:notEqual(?c, 2) ^ swrlb:notEqual(?c, 4) -> SuspiciousDescription(?r)
+Exercise(?e) ^ noteCount(?e, ?n) ^ secondsPerNote(?e, ?s) ^ swrlb:multiply(?d, ?n, ?s) -> estimatedDurationSeconds(?e, ?d)
+Exercise(?e) ^ durationSeconds(?e, ?actual) ^ estimatedDurationSeconds(?e, ?estimated) ^ swrlb:notEqual(?actual, ?estimated) -> SuspiciousDescription(?e)

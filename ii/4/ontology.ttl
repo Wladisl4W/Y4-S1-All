@@ -1,107 +1,364 @@
-@prefix app: <https://example.org/intonation-trainer/> .
+@prefix : <https://example.org/intonation-study#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://example.org/intonation-trainer> a owl:Ontology ;
-    rdfs:label "Онтология тренажёра интонации"@ru .
+<https://example.org/intonation-study> a owl:Ontology ;
+    rdfs:label "Учебная модель тренажёра интонации"@ru ;
+    rdfs:comment "Факты о каталоге и настройках взяты из исходного кода дипломного приложения; результатов пения здесь нет."@ru .
 
-app:Application a owl:Class ; rdfs:label "Приложение"@ru .
-app:Person a owl:Class ; rdfs:label "Пользователь"@ru .
-app:Mode a owl:Class ; rdfs:label "Режим"@ru .
-app:LiveMode a owl:Class ; rdfs:subClassOf app:Mode ; rdfs:label "Живой голос"@ru .
-app:ExerciseMode a owl:Class ; rdfs:subClassOf app:Mode ; rdfs:label "Распевка"@ru .
-app:SongMode a owl:Class ; rdfs:subClassOf app:Mode ; rdfs:label "Песни"@ru .
-app:Microphone a owl:Class ; rdfs:label "Микрофон"@ru .
-app:AudioSignal a owl:Class ; rdfs:label "Звук голоса"@ru .
-app:PitchDetector a owl:Class ; rdfs:label "Определитель высоты"@ru .
-app:VoiceChart a owl:Class ; rdfs:label "График голоса"@ru .
-app:Note a owl:Class ; rdfs:label "Нота"@ru .
-app:DetectedNote a owl:Class ; rdfs:subClassOf app:Note ;
-    rdfs:label "Распознанная нота"@ru .
-app:TargetNote a owl:Class ; rdfs:subClassOf app:Note ;
-    rdfs:label "Целевая нота"@ru .
-app:ExerciseResult a owl:Class ; rdfs:label "Результат распевки"@ru .
-app:LocalHistory a owl:Class ; rdfs:label "Локальная история"@ru .
-app:AudioFile a owl:Class ; rdfs:label "Аудиофайл"@ru .
-app:DraftMelody a owl:Class ; rdfs:label "Черновая нотная линия"@ru .
+:ApplicationWithHistory a owl:Class ;
+    rdfs:label "Приложение с историей"@ru ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Application [ a owl:Restriction ;
+                        owl:onProperty :hasHistory ;
+                        owl:someValuesFrom :History ] ) ] .
 
-app:hasMode a owl:ObjectProperty ;
-    rdfs:domain app:Application ; rdfs:range app:Mode .
-app:selectsMode a owl:ObjectProperty ;
-    rdfs:domain app:Person ; rdfs:range app:Mode .
-app:usesMicrophone a owl:ObjectProperty ;
-    rdfs:domain app:Person ; rdfs:range app:Microphone .
-app:providesSignal a owl:ObjectProperty ;
-    rdfs:domain app:Microphone ; rdfs:range app:AudioSignal .
-app:analyzedBy a owl:ObjectProperty ;
-    rdfs:domain app:AudioSignal ; rdfs:range app:PitchDetector .
-app:producesNote a owl:ObjectProperty ;
-    rdfs:domain app:PitchDetector ; rdfs:range app:DetectedNote .
-app:showsChart a owl:ObjectProperty ;
-    rdfs:domain app:LiveMode ; rdfs:range app:VoiceChart .
-app:displaysNote a owl:ObjectProperty ;
-    rdfs:domain app:VoiceChart ; rdfs:range app:Note .
-app:hasTarget a owl:ObjectProperty ;
-    rdfs:domain app:ExerciseMode ; rdfs:range app:TargetNote .
-app:producesResult a owl:ObjectProperty ;
-    rdfs:domain app:ExerciseMode ; rdfs:range app:ExerciseResult .
-app:storedIn a owl:ObjectProperty ;
-    rdfs:domain app:ExerciseResult ; rdfs:range app:LocalHistory .
-app:loadsFile a owl:ObjectProperty ;
-    rdfs:domain app:SongMode ; rdfs:range app:AudioFile .
-app:showsDraft a owl:ObjectProperty ;
-    rdfs:domain app:SongMode ; rdfs:range app:DraftMelody .
-app:correctsDraft a owl:ObjectProperty ;
-    rdfs:domain app:Person ; rdfs:range app:DraftMelody .
+:ExerciseInCatalog a owl:Class ;
+    rdfs:label "Упражнение в каталоге"@ru ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Exercise [ a owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf :hasExercise ] ;
+                        owl:someValuesFrom :WarmupMode ] ) ] .
 
-app:trainer a owl:NamedIndividual, app:Application ;
-    rdfs:label "Тренировка интонации"@ru ;
-    app:hasMode app:liveVoice, app:warmup, app:songMode .
-app:singer a owl:NamedIndividual, app:Person ;
-    rdfs:label "Начинающий певец"@ru ;
-    app:selectsMode app:warmup ;
-    app:usesMicrophone app:microphone ;
-    app:correctsDraft app:draftMelody .
-app:microphone a owl:NamedIndividual, app:Microphone ;
-    app:providesSignal app:voiceSignal .
-app:voiceSignal a owl:NamedIndividual, app:AudioSignal ;
-    app:analyzedBy app:pitchDetector .
-app:pitchDetector a owl:NamedIndividual, app:PitchDetector ;
-    app:producesNote app:detectedNote .
-app:liveVoice a owl:NamedIndividual, app:LiveMode ;
-    app:showsChart app:voiceChart .
-app:voiceChart a owl:NamedIndividual, app:VoiceChart ;
-    app:displaysNote app:detectedNote, app:targetNote .
-app:detectedNote a owl:NamedIndividual, app:DetectedNote .
-app:warmup a owl:NamedIndividual, app:ExerciseMode ;
-    app:hasTarget app:targetNote ;
-    app:producesResult app:exerciseResult .
-app:targetNote a owl:NamedIndividual, app:TargetNote .
-app:exerciseResult a owl:NamedIndividual, app:ExerciseResult ;
-    app:storedIn app:localHistory .
-app:localHistory a owl:NamedIndividual, app:LocalHistory .
-app:songMode a owl:NamedIndividual, app:SongMode ;
-    app:loadsFile app:mp3 ;
-    app:showsDraft app:draftMelody .
-app:mp3 a owl:NamedIndividual, app:AudioFile .
-app:draftMelody a owl:NamedIndividual, app:DraftMelody ;
-    rdfs:comment "Линия может содержать ошибки; пользователь исправляет её вручную."@ru .
+:ModeWithExercise a owl:Class ;
+    rdfs:label "Режим с упражнениями"@ru ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :WarmupMode [ a owl:Restriction ;
+                        owl:onProperty :hasExercise ;
+                        owl:someValuesFrom :Exercise ] ) ] .
 
-# Для этой версии используем простые правила вывода OWL 2 RL.
-app:Feature a owl:Class ; rdfs:label "Возможность приложения"@ru .
-app:Mode rdfs:subClassOf app:Feature .
+:PatternWithRoute a owl:Class ;
+    rdfs:label "Паттерн с маршрутом"@ru ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Pattern [ a owl:Restriction ;
+                        owl:onProperty :hasRoute ;
+                        owl:someValuesFrom :Route ] ) ] .
 
-app:showsNote a owl:ObjectProperty ;
-    rdfs:domain app:Mode ; rdfs:range app:Note .
-app:liveVoice app:showsNote app:detectedNote .
-app:warmup app:showsNote app:targetNote .
+:SetWithPattern a owl:Class ;
+    rdfs:label "Набор с паттерном"@ru ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Set [ a owl:Restriction ;
+                        owl:onProperty :hasPattern ;
+                        owl:someValuesFrom :Pattern ] ) ] .
 
-app:modeOf a owl:ObjectProperty ;
-    rdfs:domain app:Mode ; rdfs:range app:Application .
-app:hasMode owl:inverseOf app:modeOf .
+:durationMismatch a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :Exercise ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_actual ;
+                swrl:propertyPredicate :durationSeconds ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_estimated ;
+                swrl:propertyPredicate :estimatedDurationSeconds ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_actual :var_estimated ) ;
+                swrl:builtin swrlb:notEqual ] ) ;
+    swrl:head ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :SuspiciousDescription ] ) .
 
-# Если приложение имеет режим, который показывает ноту,
-# то приложение может показать эту ноту.
-app:canShow a owl:ObjectProperty ;
-    rdfs:domain app:Application ; rdfs:range app:Note ;
-    owl:propertyChainAxiom (app:hasMode app:showsNote) .
+:estimateDuration a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :Exercise ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_n ;
+                swrl:propertyPredicate :noteCount ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_s ;
+                swrl:propertyPredicate :secondsPerNote ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_d :var_n :var_s ) ;
+                swrl:builtin swrlb:multiply ] ) ;
+    swrl:head ( [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_d ;
+                swrl:propertyPredicate :estimatedDurationSeconds ] ) .
+
+:exerciseId a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+:hasMode a owl:ObjectProperty ;
+    rdfs:domain :Application ;
+    rdfs:range :Mode .
+
+:highestMidi a owl:DatatypeProperty ;
+    rdfs:domain :Pattern ;
+    rdfs:range xsd:integer .
+
+:invalidNoteCount a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :Exercise ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_n ;
+                swrl:propertyPredicate :noteCount ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_n 0 ) ;
+                swrl:builtin swrlb:lessThanOrEqual ] ) ;
+    swrl:head ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :SuspiciousDescription ] ) .
+
+:invalidPace a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :Exercise ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_e ;
+                swrl:argument2 :var_s ;
+                swrl:propertyPredicate :secondsPerNote ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_s 0 ) ;
+                swrl:builtin swrlb:lessThanOrEqual ] ) ;
+    swrl:head ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_e ;
+                swrl:classPredicate :SuspiciousDescription ] ) .
+
+:lowestMidi a owl:DatatypeProperty ;
+    rdfs:domain :Pattern ;
+    rdfs:range xsd:integer .
+
+:rootAboveLimit a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_r ;
+                swrl:classPredicate :Route ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_r ;
+                swrl:argument2 :var_m ;
+                swrl:propertyPredicate :rootMidi ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_m 72 ) ;
+                swrl:builtin swrlb:greaterThan ] ) ;
+    swrl:head ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_r ;
+                swrl:classPredicate :SuspiciousDescription ] ) .
+
+:rootBelowLimit a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_r ;
+                swrl:classPredicate :Route ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_r ;
+                swrl:argument2 :var_m ;
+                swrl:propertyPredicate :rootMidi ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_m 36 ) ;
+                swrl:builtin swrlb:lessThan ] ) ;
+    swrl:head ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_r ;
+                swrl:classPredicate :SuspiciousDescription ] ) .
+
+:title a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+:trainer a owl:NamedIndividual,
+        :Application ;
+    rdfs:label "Тренажёр интонации"@ru ;
+    :hasHistory :localHistory ;
+    :hasMode :live,
+        :songs,
+        :warmup .
+
+:unsupportedClimb a swrl:Imp ;
+    swrl:body ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_r ;
+                swrl:classPredicate :Route ] [ a swrl:DatavaluedPropertyAtom ;
+                swrl:argument1 :var_r ;
+                swrl:argument2 :var_c ;
+                swrl:propertyPredicate :climbSemitones ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_c 0 ) ;
+                swrl:builtin swrlb:notEqual ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_c 2 ) ;
+                swrl:builtin swrlb:notEqual ] [ a swrl:BuiltinAtom ;
+                swrl:arguments ( :var_c 4 ) ;
+                swrl:builtin swrlb:notEqual ] ) ;
+    swrl:head ( [ a swrl:ClassAtom ;
+                swrl:argument1 :var_r ;
+                swrl:classPredicate :SuspiciousDescription ] ) .
+
+:LiveMode a owl:Class ;
+    rdfs:label "Живой голос"@ru ;
+    rdfs:subClassOf :Mode .
+
+:SongMode a owl:Class ;
+    rdfs:label "Режим песен"@ru ;
+    rdfs:subClassOf :Mode .
+
+:ascendingRoute0 a owl:NamedIndividual,
+        :Route ;
+    :climbSemitones 0 ;
+    :rootMidi 60 .
+
+:ascendingRoute2 a owl:NamedIndividual,
+        :Route ;
+    :climbSemitones 2 ;
+    :rootMidi 60 .
+
+:ascendingRoute4 a owl:NamedIndividual,
+        :Route ;
+    :climbSemitones 4 ;
+    :rootMidi 60 .
+
+:basicSet a owl:NamedIndividual,
+        :Exercise,
+        :Set ;
+    :durationSeconds 46.0 ;
+    :exerciseId "basic_set" ;
+    :hasPattern :ascending,
+        :descending,
+        :threeNotes,
+        :triad ;
+    :noteCount 23 ;
+    :secondsPerNote 2.0 ;
+    :title "Основной набор" .
+
+:climbSemitones a owl:DatatypeProperty ;
+    rdfs:domain :Route ;
+    rdfs:range xsd:integer .
+
+:durationSeconds a owl:DatatypeProperty ;
+    rdfs:domain :Exercise ;
+    rdfs:range xsd:decimal .
+
+:hasHistory a owl:ObjectProperty ;
+    rdfs:domain :Application ;
+    rdfs:range :History .
+
+:hasPattern a owl:ObjectProperty ;
+    rdfs:domain :Set ;
+    rdfs:range :Pattern .
+
+:hasRoute a owl:ObjectProperty ;
+    rdfs:domain :Pattern ;
+    rdfs:range :Route .
+
+:live a owl:NamedIndividual,
+        :LiveMode ;
+    rdfs:label "Живой голос"@ru .
+
+:localHistory a owl:NamedIndividual,
+        :History ;
+    rdfs:comment "Приложение сохраняет результаты в локальный progress.csv; содержимое файла в модель не импортируется."@ru .
+
+:songs a owl:NamedIndividual,
+        :SongMode ;
+    rdfs:label "Песни, эксперимент"@ru .
+
+:warmup a owl:NamedIndividual,
+        :WarmupMode ;
+    rdfs:label "Распевки"@ru ;
+    :hasExercise :ascending,
+        :basicSet,
+        :descending,
+        :threeNotes,
+        :triad .
+
+:ascending a owl:NamedIndividual,
+        :Exercise,
+        :Pattern ;
+    :durationSeconds 10.0 ;
+    :exerciseId "ascending" ;
+    :hasRoute :ascendingRoute0,
+        :ascendingRoute2,
+        :ascendingRoute4 ;
+    :highestMidi 67 ;
+    :lowestMidi 60 ;
+    :noteCount 5 ;
+    :secondsPerNote 2.0 ;
+    :title "Лесенка вверх" .
+
+:descending a owl:NamedIndividual,
+        :Exercise,
+        :Pattern ;
+    :durationSeconds 10.0 ;
+    :exerciseId "descending" ;
+    :highestMidi 67 ;
+    :lowestMidi 60 ;
+    :noteCount 5 ;
+    :secondsPerNote 2.0 ;
+    :title "Лесенка вниз" .
+
+:estimatedDurationSeconds a owl:DatatypeProperty .
+
+:hasExercise a owl:ObjectProperty ;
+    rdfs:domain :WarmupMode ;
+    rdfs:range :Exercise .
+
+:noteCount a owl:DatatypeProperty ;
+    rdfs:domain :Exercise ;
+    rdfs:range xsd:integer .
+
+:rootMidi a owl:DatatypeProperty ;
+    rdfs:domain :Route ;
+    rdfs:range xsd:integer .
+
+:secondsPerNote a owl:DatatypeProperty ;
+    rdfs:domain :Exercise ;
+    rdfs:range xsd:decimal .
+
+:threeNotes a owl:NamedIndividual,
+        :Exercise,
+        :Pattern ;
+    :durationSeconds 10.0 ;
+    :exerciseId "three_notes" ;
+    :highestMidi 64 ;
+    :lowestMidi 60 ;
+    :noteCount 5 ;
+    :secondsPerNote 2.0 ;
+    :title "Пирамидка" .
+
+:triad a owl:NamedIndividual,
+        :Exercise,
+        :Pattern ;
+    :durationSeconds 10.0 ;
+    :exerciseId "triad" ;
+    :highestMidi 67 ;
+    :lowestMidi 60 ;
+    :noteCount 5 ;
+    :secondsPerNote 2.0 ;
+    :title "Арпеджио" .
+
+:var_actual a swrl:Variable .
+
+:var_d a swrl:Variable .
+
+:var_estimated a swrl:Variable .
+
+:History a owl:Class ;
+    rdfs:label "История занятий"@ru .
+
+:Set a owl:Class ;
+    rdfs:label "Набор"@ru ;
+    rdfs:subClassOf :Exercise .
+
+:Application a owl:Class ;
+    rdfs:label "Приложение"@ru .
+
+:Mode a owl:Class ;
+    rdfs:label "Режим"@ru .
+
+:WarmupMode a owl:Class ;
+    rdfs:label "Режим распевок"@ru ;
+    rdfs:subClassOf :Mode .
+
+:var_c a swrl:Variable .
+
+:var_m a swrl:Variable .
+
+:var_n a swrl:Variable .
+
+:var_s a swrl:Variable .
+
+:SuspiciousDescription a owl:Class ;
+    rdfs:label "Сомнительное описание"@ru .
+
+:var_r a swrl:Variable .
+
+:Pattern a owl:Class ;
+    rdfs:label "Паттерн"@ru ;
+    rdfs:subClassOf :Exercise .
+
+:Route a owl:Class ;
+    rdfs:label "Маршрут"@ru .
+
+:var_e a swrl:Variable .
+
+:Exercise a owl:Class ;
+    rdfs:label "Распевка"@ru .

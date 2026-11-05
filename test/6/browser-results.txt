@@ -1,0 +1,5 @@
+03.11.2026; Ubuntu; браузер Codex In-app Browser: действия через интерфейс; Google Chrome (headless): собственные снимки тех же страниц 1366×1100.
+Задача 1: с главной страницы нажата ссылка BOOKS в верхнем меню; открыт https://demowebshop.tricentis.com/books; заголовок Demo Web Shop. Books; 6 карточек товаров.
+Задача 6: из Books нажата ссылка Computing and Internet; открыт https://demowebshop.tricentis.com/computing-and-internet; на странице видны название, описание, наличие In stock, старая цена 30.00 и текущая цена 10.00.
+Задача 37: на странице товара в верхнюю строку введено Computing и нажата Search; открыт https://demowebshop.tricentis.com/search?q=Computing; видны два результата: Computing and Internet и Copy of Computing and Internet EX.
+Исходные снимки: screenshots/books-view.png, product-view.png, search-view.png. Для отчёта подготовлены только обрезанные фрагменты этих снимков без изменения содержимого: books-report.png, product-report.png, search-report.png.

@@ -1,0 +1,13 @@
+№,Процессор,ОЗУ,Накопитель,Видеокарта
+1,Intel i5,8 ГБ,SSD 512 ГБ,NVIDIA RTX 3060
+2,Intel i5,8 ГБ,SSD 1 ТБ,NVIDIA GTX 1650
+3,Intel i5,16 ГБ,SSD 256 ГБ,Интегрированная
+4,Intel i5,16 ГБ,HDD 1 ТБ,NVIDIA GTX 1650
+5,Intel i7,8 ГБ,SSD 256 ГБ,NVIDIA RTX 3060
+6,Intel i7,16 ГБ,SSD 512 ГБ,NVIDIA GTX 1650
+7,Intel i7,32 ГБ,SSD 1 ТБ,Интегрированная
+8,AMD Ryzen 7,8 ГБ,HDD 1 ТБ,Интегрированная
+9,AMD Ryzen 7,16 ГБ,SSD 1 ТБ,NVIDIA RTX 3060
+10,AMD Ryzen 7,32 ГБ,SSD 256 ГБ,NVIDIA GTX 1650
+11,AMD Ryzen 7,32 ГБ,SSD 512 ГБ,Интегрированная
+12,AMD Ryzen 7,32 ГБ,HDD 1 ТБ,NVIDIA RTX 3060

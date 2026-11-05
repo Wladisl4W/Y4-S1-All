@@ -1,0 +1,3 @@
+valid HTTP 200 URL https://the-internet.herokuapp.com/secure message You logged into a secure area! ×
+wrong-password HTTP 200 URL https://the-internet.herokuapp.com/login message Your password is invalid! ×
+empty HTTP 200 URL https://the-internet.herokuapp.com/login message Your username is invalid! ×

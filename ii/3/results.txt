@@ -1,0 +1,38 @@
+Исходных троек: 215
+Вывод OWL перед запросами не запускался.
+
+1-exercises.rq
+id | title | notes | seconds
+ascending | Лесенка вверх | 5 | 10.0
+basic_set | Основной набор | 23 | 46.0
+descending | Лесенка вниз | 5 | 10.0
+three_notes | Пирамидка | 5 | 10.0
+triad | Арпеджио | 5 | 10.0
+Строк: 5
+
+2-patterns.rq
+title | low | high
+Арпеджио | 60 | 67
+Лесенка вверх | 60 | 67
+Лесенка вниз | 60 | 67
+Пирамидка | 60 | 64
+Строк: 4
+
+3-routes.rq
+pattern | root | climb
+Лесенка вверх | 60 | 0
+Лесенка вверх | 60 | 2
+Лесенка вверх | 60 | 4
+Строк: 3
+
+4-modes.rq
+mode | label | exerciseCount
+https://example.org/intonation-study#live | Живой голос | —
+https://example.org/intonation-study#songs | Песни, эксперимент | —
+https://example.org/intonation-study#warmup | Распевки | 5
+Строк: 3
+
+5-catalog-count.rq
+count
+5
+Строк: 1

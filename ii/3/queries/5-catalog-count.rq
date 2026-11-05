@@ -1,0 +1,4 @@
+PREFIX : <https://example.org/intonation-study#>
+SELECT (COUNT(?exercise) AS ?count) WHERE {
+  :warmup :hasExercise ?exercise .
+}

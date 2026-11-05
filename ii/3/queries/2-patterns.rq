@@ -1,0 +1,5 @@
+PREFIX : <https://example.org/intonation-study#>
+SELECT ?title ?low ?high WHERE {
+  ?pattern a :Pattern ; :title ?title ; :lowestMidi ?low ; :highestMidi ?high .
+  FILTER(?high >= 64)
+} ORDER BY ?title

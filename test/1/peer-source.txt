@@ -1,0 +1,2 @@
+Источник независимой программы: https://github.com/AdTekDev/ASE.SoftwareTesting/blob/main/LABs/W02/Code/PTriangle.py
+Получена 01.11.2026. Локальная копия: peer_triangle.py. Тестовый ввод: 0.0001, 0.00015, 0.0002.

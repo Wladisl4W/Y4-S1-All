@@ -1,0 +1,11 @@
+PREFIX : <https://example.org/intonation-study#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?mode ?label ?exerciseCount WHERE {
+  ?app a :Application ; :hasMode ?mode .
+  ?mode rdfs:label ?label .
+  OPTIONAL {
+    SELECT ?mode (COUNT(?exercise) AS ?exerciseCount) WHERE {
+      ?mode :hasExercise ?exercise .
+    } GROUP BY ?mode
+  }
+} ORDER BY ?label
