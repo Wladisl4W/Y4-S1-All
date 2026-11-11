@@ -107,15 +107,19 @@ def show_roc(y_true, class_scores, labels, name):
 if __name__ == "__main__":
     # 1
     print("\n1. Предварительная обработка данных")
+    # 1a. Загрузка данных о красном вине
     df = pd.read_csv(Path(__file__).resolve().parent / "winequality-red.csv", sep=";")
     print("Размер исходного набора:", df.shape)
     print("Типы данных:\n", df.dtypes)
+    # 1b. Проверка пропусков; при подготовке признаков они заменяются медианами
     print("Пропуски:\n", df.isna().sum())
+    # 1c. Поиск и удаление полных дубликатов
     print("Полных повторов:", df.duplicated().sum())
     df = df.drop_duplicates().reset_index(drop=True)
     print("После удаления повторов:", df.shape)
     print("Число вин по оценкам качества:\n", df["quality"].value_counts().sort_index())
 
+    # 1e. Разделение на обучение и тест до вычисления параметров стандартизации
     features = df.columns.drop("quality").tolist()
     X_train, X_test, y_train, y_test = train_test_split(
         df[features], df["quality"], test_size=0.30,
@@ -125,15 +129,18 @@ if __name__ == "__main__":
     print("Обучающих строк:", len(X_train), "тестовых строк:", len(X_test))
     print("Классы в обучении:", [int(value) for value in sorted(y_train.unique())])
     print("Классы в тесте:", [int(value) for value in sorted(y_test.unique())])
+    # 1d. Заполнение пропусков и стандартизация по обучающей части
     X_train_scaled, X_test_scaled = prepare_features(X_train, X_test)
     print("Пропуски заполнены медианами обучения; признаки стандартизованы по обучению.")
 
     # 2
     print("\n2. Визуализация данных")
+    # 2a. Гистограммы всех химических признаков
     X_train.hist(bins=20, figsize=(15, 11), edgecolor="black")
     plt.suptitle("Распределение химических признаков красного вина")
     plt.tight_layout()
 
+    # 2b. Матрица корреляций
     train_with_quality = X_train.copy()
     train_with_quality["quality"] = y_train
     correlations = train_with_quality.corr()
@@ -153,6 +160,7 @@ if __name__ == "__main__":
     ax.set_title("Матрица корреляций признаков и качества вина")
     fig.tight_layout()
 
+    # 2c. Диаграммы рассеяния для двух важных признаков
     important = (correlations["quality"].drop("quality").abs()
                  .sort_values(ascending=False).head(2).index.tolist())
     print("Два признака с наибольшей связью с качеством:", important)
@@ -166,6 +174,7 @@ if __name__ == "__main__":
 
     # 3
     print("\n3. Классификация и подбор параметров")
+    # 3a. Выбор трёх алгоритмов классификации
     settings = [
         ("Логистическая регрессия", [0.1, 1, 10], "C"),
         ("Метод опорных векторов", [0.1, 1, 10], "C"),
@@ -174,13 +183,16 @@ if __name__ == "__main__":
     results = []
     for name, parameters, parameter_name in settings:
         print(f"\nМодель: {name}")
+        # 3d. Подбор параметра по пяти обучающим фолдам
         best_parameter, cv_score = choose_parameter(
             name, parameters, X_train, y_train
         )
         print(f"Выбран параметр {parameter_name} = {best_parameter}; "
               f"средняя F1 на обучающих фолдах = {cv_score:.3f}")
+        # 3b. Обучение выбранной модели на всей обучающей части
         model = make_model(name, best_parameter)
         model.fit(X_train_scaled, y_train)
+        # 3c. Прогноз и метрики на отложенном тесте
         predicted = model.predict(X_test_scaled)
         if name == "Метод опорных векторов":
             class_scores = model.decision_function(X_test_scaled)
@@ -193,12 +205,13 @@ if __name__ == "__main__":
         f1 = f1_score(y_test, predicted, average="macro", zero_division=0)
         print(f"Тест: Accuracy = {accuracy:.3f}; Precision = {precision:.3f}; "
               f"Recall = {recall:.3f}; F1 = {f1:.3f}")
+        # 3e. Матрица ошибок и ROC-кривые для каждого класса качества
         show_confusion(y_test, predicted, labels, name)
         show_roc(y_test, class_scores, labels, name)
         results.append((name, best_parameter, accuracy, precision, recall, f1))
 
-    # 4
-    print("\n4. Сравнение классификаторов на одном тестовом наборе")
+    # Сравнение алгоритмов после выполнения пункта 3 для каждой модели
+    print("\n3. Сравнение классификаторов на одном тестовом наборе")
     print(f"{'Модель':27} {'Параметр':>10} {'Accuracy':>9} "
           f"{'Precision':>10} {'Recall':>8} {'F1':>8}")
     for name, parameter, accuracy, precision, recall, f1 in results:
