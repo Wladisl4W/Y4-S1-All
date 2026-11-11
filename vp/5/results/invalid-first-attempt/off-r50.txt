@@ -1,0 +1,68 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: test-cache.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+              * cache: 50.00 iterations/s for 1m0s (maxVUs: 100-600, gracefulStop: 30s)
+
+
+running (0m01.0s), 031/100 VUs, 18 complete and 0 interrupted iterations
+cache   [   2% ] 031/100 VUs  0m01.0s/1m0s  50.00 iters/s
+time="2026-11-06T14:53:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:53:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:53:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m02.0s), 059/100 VUs, 40 complete and 0 interrupted iterations
+cache   [   3% ] 059/100 VUs  0m02.0s/1m0s  50.00 iters/s
+time="2026-11-06T14:53:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:53:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:53:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:53:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=1.31s
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=14.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 50     21.925578/s
+    checks_succeeded...: 86.00% 43 out of 50
+    checks_failed......: 14.00% 7 out of 50
+
+    ✗ status is 200
+      ↳  86% — ✓ 43 / ✗ 7
+
+    HTTP
+    http_req_duration..............: avg=623.53ms min=0s       med=613.09ms max=1.39s p(90)=1.23s p(95)=1.31s p(99)=1.38s
+      { expected_response:true }...: avg=725.03ms min=52.11ms  med=724.42ms max=1.39s p(90)=1.26s p(95)=1.32s p(99)=1.38s
+    http_req_failed................: 14.00% 7 out of 50
+    http_reqs......................: 50     21.925578/s
+
+    EXECUTION
+    iteration_duration.............: avg=624.67ms min=872.49µs med=614.27ms max=1.39s p(90)=1.23s p(95)=1.31s p(99)=1.38s
+    iterations.....................: 50     21.925578/s
+    vus............................: 59     min=31      max=59 
+    vus_max........................: 100    min=100     max=100
+
+    NETWORK
+    data_received..................: 8.0 kB 3.5 kB/s
+    data_sent......................: 9.6 kB 4.2 kB/s
+
+
+
+
+running (0m02.3s), 000/100 VUs, 50 complete and 64 interrupted iterations
+cache ✗ [   4% ] 059/100 VUs  0m02.3s/1m0s  50.00 iters/s

@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cache-app
+  namespace: vp-lr5
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: cache-app}
+  template:
+    metadata:
+      labels: {app: cache-app}
+    spec:
+      containers:
+        - name: cache-app
+          image: python:3.12-slim
+          imagePullPolicy: IfNotPresent
+          workingDir: /app
+          command: ["/bin/sh", "-c"]
+          args: ["pip install --no-cache-dir --no-index --find-links=/wheels -r /app/requirements.txt && exec gunicorn --workers 1 --bind 0.0.0.0:8000 app:app"]
+          ports:
+            - containerPort: 8000
+          env:
+            - name: CACHE_TTL
+              value: "30"
+          volumeMounts:
+            - name: source
+              mountPath: /app
+            - name: wheels
+              mountPath: /wheels
+              readOnly: true
+          resources:
+            requests: {cpu: 100m, memory: 128Mi}
+            limits: {cpu: "1", memory: 256Mi}
+          readinessProbe:
+            httpGet: {path: /health, port: 8000}
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 10
+            failureThreshold: 120
+      volumes:
+        - name: source
+          configMap:
+            name: cache-app-source
+        - name: wheels
+          hostPath:
+            path: /home/wladisl4w/uni/4/vp/5/wheels
+            type: Directory
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cache-app
+  namespace: vp-lr5
+  labels: {app: cache-app}
+spec:
+  type: NodePort
+  selector: {app: cache-app}
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      nodePort: 30085

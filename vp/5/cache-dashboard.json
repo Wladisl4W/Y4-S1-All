@@ -1,0 +1,276 @@
+{
+  "panels": [
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "unit": "reqps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {},
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "sum by (mode) (rate(app_http_requests_total{namespace=\"$namespace\",mode=~\"$mode\"}[15s]))",
+          "legendFormat": "{{mode}}",
+          "refId": "A"
+        }
+      ],
+      "title": "HTTP RPS by mode",
+      "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "unit": "s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 2,
+      "options": {},
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "histogram_quantile(0.95, sum by (le, mode) (rate(app_http_request_duration_seconds_bucket{namespace=\"$namespace\",mode=~\"$mode\"}[15s])))",
+          "legendFormat": "{{mode}}",
+          "refId": "A"
+        }
+      ],
+      "title": "p95 Latency by mode",
+      "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 3,
+      "options": {},
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "100 * sum(rate(cache_hits_total{namespace=\"$namespace\"}[15s])) / (sum(rate(cache_hits_total{namespace=\"$namespace\"}[15s])) + sum(rate(cache_misses_total{namespace=\"$namespace\"}[15s])))",
+          "legendFormat": "Hit Ratio",
+          "refId": "A"
+        }
+      ],
+      "title": "Cache Hit Ratio",
+      "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "unit": "reqps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 4,
+      "options": {},
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "sum(rate(source_requests_total{namespace=\"$namespace\"}[15s]))",
+          "legendFormat": "Source RPS",
+          "refId": "A"
+        }
+      ],
+      "title": "Source RPS",
+      "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "unit": "reqps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "id": 5,
+      "options": {},
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "sum(rate(cache_hits_total{namespace=\"$namespace\"}[15s]))",
+          "legendFormat": "Hits",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "sum(rate(cache_misses_total{namespace=\"$namespace\"}[15s]))",
+          "legendFormat": "Misses",
+          "refId": "B"
+        }
+      ],
+      "title": "Cache Hits and Misses",
+      "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      },
+      "id": 6,
+      "options": {},
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus-lr5"
+          },
+          "editorMode": "code",
+          "expr": "100 * sum by (mode) (rate(app_http_requests_total{namespace=\"$namespace\",mode=~\"$mode\",status=~\"[45]..\"}[15s])) / sum by (mode) (rate(app_http_requests_total{namespace=\"$namespace\",mode=~\"$mode\"}[15s]))",
+          "legendFormat": "{{mode}}",
+          "refId": "A"
+        }
+      ],
+      "title": "HTTP Error Rate by mode",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 41,
+  "tags": [
+    "vp-lr5",
+    "redis"
+  ],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "text": "vp-lr5",
+          "value": "vp-lr5"
+        },
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus-lr5"
+        },
+        "label": "namespace",
+        "name": "namespace",
+        "query": {
+          "query": "label_values(up, namespace)",
+          "refId": "PrometheusVariableQueryEditor-VariableQuery"
+        },
+        "refresh": 1,
+        "sort": 1,
+        "type": "query"
+      },
+      {
+        "current": {
+          "text": "All",
+          "value": ".*"
+        },
+        "label": "mode",
+        "name": "mode",
+        "options": [
+          {
+            "selected": true,
+            "text": "All",
+            "value": ".*"
+          },
+          {
+            "selected": false,
+            "text": "on",
+            "value": "on"
+          },
+          {
+            "selected": false,
+            "text": "off",
+            "value": "off"
+          }
+        ],
+        "query": "All : .*,on : on,off : off",
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "timezone": "browser",
+  "title": "Cache Aside - Redis Lab 5",
+  "uid": "vp-lr5-cache",
+  "version": 1
+}

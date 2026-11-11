@@ -1,0 +1,598 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: test-cache.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 600 max VUs, 3m0s max duration (incl. graceful stop):
+              * cache: 10.00 iterations/s for 2m30s (maxVUs: 100-600, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/100 VUs, 10 complete and 0 interrupted iterations
+cache   [   1% ] 000/100 VUs  0m01.0s/2m30s  10.00 iters/s
+
+running (0m02.0s), 000/100 VUs, 20 complete and 0 interrupted iterations
+cache   [   1% ] 000/100 VUs  0m02.0s/2m30s  10.00 iters/s
+
+running (0m03.0s), 000/100 VUs, 30 complete and 0 interrupted iterations
+cache   [   2% ] 000/100 VUs  0m03.0s/2m30s  10.00 iters/s
+
+running (0m04.0s), 000/100 VUs, 40 complete and 0 interrupted iterations
+cache   [   3% ] 000/100 VUs  0m04.0s/2m30s  10.00 iters/s
+
+running (0m05.0s), 000/100 VUs, 50 complete and 0 interrupted iterations
+cache   [   3% ] 000/100 VUs  0m05.0s/2m30s  10.00 iters/s
+
+running (0m06.0s), 000/100 VUs, 60 complete and 0 interrupted iterations
+cache   [   4% ] 000/100 VUs  0m06.0s/2m30s  10.00 iters/s
+
+running (0m07.0s), 000/100 VUs, 70 complete and 0 interrupted iterations
+cache   [   5% ] 000/100 VUs  0m07.0s/2m30s  10.00 iters/s
+
+running (0m08.0s), 000/100 VUs, 80 complete and 0 interrupted iterations
+cache   [   5% ] 000/100 VUs  0m08.0s/2m30s  10.00 iters/s
+
+running (0m09.0s), 000/100 VUs, 90 complete and 0 interrupted iterations
+cache   [   6% ] 000/100 VUs  0m09.0s/2m30s  10.00 iters/s
+
+running (0m10.0s), 000/100 VUs, 100 complete and 0 interrupted iterations
+cache   [   7% ] 000/100 VUs  0m10.0s/2m30s  10.00 iters/s
+
+running (0m11.0s), 000/100 VUs, 110 complete and 0 interrupted iterations
+cache   [   7% ] 000/100 VUs  0m11.0s/2m30s  10.00 iters/s
+
+running (0m12.0s), 000/100 VUs, 120 complete and 0 interrupted iterations
+cache   [   8% ] 000/100 VUs  0m12.0s/2m30s  10.00 iters/s
+
+running (0m13.0s), 000/100 VUs, 130 complete and 0 interrupted iterations
+cache   [   9% ] 000/100 VUs  0m13.0s/2m30s  10.00 iters/s
+
+running (0m14.0s), 000/100 VUs, 140 complete and 0 interrupted iterations
+cache   [   9% ] 000/100 VUs  0m14.0s/2m30s  10.00 iters/s
+
+running (0m15.0s), 000/100 VUs, 150 complete and 0 interrupted iterations
+cache   [  10% ] 000/100 VUs  0m15.0s/2m30s  10.00 iters/s
+
+running (0m16.0s), 000/100 VUs, 160 complete and 0 interrupted iterations
+cache   [  11% ] 000/100 VUs  0m16.0s/2m30s  10.00 iters/s
+
+running (0m17.0s), 000/100 VUs, 170 complete and 0 interrupted iterations
+cache   [  11% ] 000/100 VUs  0m17.0s/2m30s  10.00 iters/s
+
+running (0m18.0s), 000/100 VUs, 180 complete and 0 interrupted iterations
+cache   [  12% ] 000/100 VUs  0m18.0s/2m30s  10.00 iters/s
+
+running (0m19.0s), 000/100 VUs, 190 complete and 0 interrupted iterations
+cache   [  13% ] 000/100 VUs  0m19.0s/2m30s  10.00 iters/s
+
+running (0m20.0s), 000/100 VUs, 200 complete and 0 interrupted iterations
+cache   [  13% ] 000/100 VUs  0m20.0s/2m30s  10.00 iters/s
+
+running (0m21.0s), 000/100 VUs, 210 complete and 0 interrupted iterations
+cache   [  14% ] 000/100 VUs  0m21.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:17:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41172->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41178->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41194->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41210->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41218->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41220->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41230->10.80.128.80:30085: read: connection reset by peer"
+
+running (0m22.0s), 001/100 VUs, 219 complete and 0 interrupted iterations
+cache   [  15% ] 001/100 VUs  0m22.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41240->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41256->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41260->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41266->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41278->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41294->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:17:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41306->10.80.128.80:30085: read: connection reset by peer"
+
+running (21m37.8s), 001/100 VUs, 226 complete and 0 interrupted iterations
+cache   [  15% ] 001/100 VUs  0m23.1s/2m30s  10.00 iters/s
+
+running (21m38.6s), 014/100 VUs, 226 complete and 0 interrupted iterations
+cache   [  16% ] 014/100 VUs  0m24.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41310->10.80.128.80:30085: read: connection reset by peer"
+
+running (21m39.7s), 023/100 VUs, 227 complete and 0 interrupted iterations
+cache   [  17% ] 023/100 VUs  0m25.0s/2m30s  10.00 iters/s
+
+running (21m40.7s), 033/100 VUs, 227 complete and 0 interrupted iterations
+cache   [  17% ] 033/100 VUs  0m26.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41314->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41344->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41330->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41338->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41346->10.80.128.80:30085: read: connection reset by peer"
+
+running (21m41.6s), 038/100 VUs, 232 complete and 0 interrupted iterations
+cache   [  18% ] 038/100 VUs  0m27.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41354->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41360->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41364->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41374->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41382->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41388->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41398->10.80.128.80:30085: read: connection reset by peer"
+
+running (21m42.7s), 041/100 VUs, 239 complete and 0 interrupted iterations
+cache   [  19% ] 041/100 VUs  0m28.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41404->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41412->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41416->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41418->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41426->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41434->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41442->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41450->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41456->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41462->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41474->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41484->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41488->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41492->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41508->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41514->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41532->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41524->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41538->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41544->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41548->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41554->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41572->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:47+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41568->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41596->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41618->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41582->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41584->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41606->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41608->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41620->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41624->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41626->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41662->10.80.128.80:30085: read: connection reset by peer"
+
+running (21m43.7s), 017/100 VUs, 273 complete and 0 interrupted iterations
+cache   [  19% ] 017/100 VUs  0m29.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41654->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41642->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41630->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41696->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41682->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41672->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41702->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41710->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41726->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41740->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41742->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41728->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41752->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41748->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41754->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41756->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41764->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": read tcp 172.18.0.1:41766->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41778->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=on\": read tcp 172.18.0.1:41806->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": read tcp 172.18.0.1:41800->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=on\": read tcp 172.18.0.1:41788->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:48+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=on\": read tcp 172.18.0.1:41818->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": read tcp 172.18.0.1:41820->10.80.128.80:30085: read: connection reset by peer"
+
+running (21m44.6s), 003/100 VUs, 297 complete and 0 interrupted iterations
+cache   [  20% ] 003/100 VUs  0m30.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=on\": read tcp 172.18.0.1:41824->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=on\": read tcp 172.18.0.1:41830->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=on\": read tcp 172.18.0.1:41846->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=on\": read tcp 172.18.0.1:41862->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T16:38:49+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=on\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T16:38:50+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=on\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (21m45.6s), 001/100 VUs, 309 complete and 0 interrupted iterations
+cache   [  21% ] 001/100 VUs  0m31.0s/2m30s  10.00 iters/s
+time="2026-11-06T16:38:50+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=on\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (21m46.6s), 000/100 VUs, 320 complete and 0 interrupted iterations
+cache   [  21% ] 000/100 VUs  0m32.0s/2m30s  10.00 iters/s
+
+running (21m47.7s), 000/100 VUs, 330 complete and 0 interrupted iterations
+cache   [  22% ] 000/100 VUs  0m33.0s/2m30s  10.00 iters/s
+
+running (21m48.6s), 000/100 VUs, 340 complete and 0 interrupted iterations
+cache   [  23% ] 000/100 VUs  0m34.0s/2m30s  10.00 iters/s
+
+running (21m49.6s), 000/100 VUs, 350 complete and 0 interrupted iterations
+cache   [  23% ] 000/100 VUs  0m35.0s/2m30s  10.00 iters/s
+
+running (21m50.6s), 000/100 VUs, 360 complete and 0 interrupted iterations
+cache   [  24% ] 000/100 VUs  0m36.0s/2m30s  10.00 iters/s
+
+running (21m51.7s), 000/100 VUs, 370 complete and 0 interrupted iterations
+cache   [  25% ] 000/100 VUs  0m37.0s/2m30s  10.00 iters/s
+
+running (21m52.7s), 000/100 VUs, 380 complete and 0 interrupted iterations
+cache   [  25% ] 000/100 VUs  0m38.0s/2m30s  10.00 iters/s
+
+running (21m53.7s), 000/100 VUs, 390 complete and 0 interrupted iterations
+cache   [  26% ] 000/100 VUs  0m39.0s/2m30s  10.00 iters/s
+
+running (21m54.6s), 000/100 VUs, 400 complete and 0 interrupted iterations
+cache   [  27% ] 000/100 VUs  0m40.0s/2m30s  10.00 iters/s
+
+running (21m55.7s), 000/100 VUs, 410 complete and 0 interrupted iterations
+cache   [  27% ] 000/100 VUs  0m41.0s/2m30s  10.00 iters/s
+
+running (21m56.6s), 000/100 VUs, 420 complete and 0 interrupted iterations
+cache   [  28% ] 000/100 VUs  0m42.0s/2m30s  10.00 iters/s
+
+running (21m57.7s), 000/100 VUs, 430 complete and 0 interrupted iterations
+cache   [  29% ] 000/100 VUs  0m43.0s/2m30s  10.00 iters/s
+
+running (21m58.6s), 000/100 VUs, 440 complete and 0 interrupted iterations
+cache   [  29% ] 000/100 VUs  0m44.0s/2m30s  10.00 iters/s
+
+running (21m59.7s), 000/100 VUs, 450 complete and 0 interrupted iterations
+cache   [  30% ] 000/100 VUs  0m45.0s/2m30s  10.00 iters/s
+
+running (22m00.7s), 000/100 VUs, 460 complete and 0 interrupted iterations
+cache   [  31% ] 000/100 VUs  0m46.0s/2m30s  10.00 iters/s
+
+running (22m01.7s), 000/100 VUs, 470 complete and 0 interrupted iterations
+cache   [  31% ] 000/100 VUs  0m47.0s/2m30s  10.00 iters/s
+
+running (22m02.6s), 000/100 VUs, 480 complete and 0 interrupted iterations
+cache   [  32% ] 000/100 VUs  0m48.0s/2m30s  10.00 iters/s
+
+running (22m03.6s), 000/100 VUs, 490 complete and 0 interrupted iterations
+cache   [  33% ] 000/100 VUs  0m49.0s/2m30s  10.00 iters/s
+
+running (22m04.7s), 000/100 VUs, 500 complete and 0 interrupted iterations
+cache   [  33% ] 000/100 VUs  0m50.0s/2m30s  10.00 iters/s
+
+running (22m05.7s), 000/100 VUs, 510 complete and 0 interrupted iterations
+cache   [  34% ] 000/100 VUs  0m51.0s/2m30s  10.00 iters/s
+
+running (22m06.7s), 000/100 VUs, 520 complete and 0 interrupted iterations
+cache   [  35% ] 000/100 VUs  0m52.0s/2m30s  10.00 iters/s
+
+running (22m07.6s), 000/100 VUs, 530 complete and 0 interrupted iterations
+cache   [  35% ] 000/100 VUs  0m53.0s/2m30s  10.00 iters/s
+
+running (22m08.7s), 000/100 VUs, 540 complete and 0 interrupted iterations
+cache   [  36% ] 000/100 VUs  0m54.0s/2m30s  10.00 iters/s
+
+running (22m09.7s), 000/100 VUs, 550 complete and 0 interrupted iterations
+cache   [  37% ] 000/100 VUs  0m55.0s/2m30s  10.00 iters/s
+
+running (22m10.7s), 000/100 VUs, 560 complete and 0 interrupted iterations
+cache   [  37% ] 000/100 VUs  0m56.0s/2m30s  10.00 iters/s
+
+running (22m11.6s), 000/100 VUs, 570 complete and 0 interrupted iterations
+cache   [  38% ] 000/100 VUs  0m57.0s/2m30s  10.00 iters/s
+
+running (22m12.6s), 000/100 VUs, 580 complete and 0 interrupted iterations
+cache   [  39% ] 000/100 VUs  0m58.0s/2m30s  10.00 iters/s
+
+running (22m13.7s), 000/100 VUs, 590 complete and 0 interrupted iterations
+cache   [  39% ] 000/100 VUs  0m59.0s/2m30s  10.00 iters/s
+
+running (22m14.7s), 000/100 VUs, 600 complete and 0 interrupted iterations
+cache   [  40% ] 000/100 VUs  1m00.0s/2m30s  10.00 iters/s
+
+running (22m15.7s), 000/100 VUs, 610 complete and 0 interrupted iterations
+cache   [  41% ] 000/100 VUs  1m01.0s/2m30s  10.00 iters/s
+
+running (22m16.7s), 000/100 VUs, 620 complete and 0 interrupted iterations
+cache   [  41% ] 000/100 VUs  1m02.0s/2m30s  10.00 iters/s
+
+running (22m17.7s), 000/100 VUs, 630 complete and 0 interrupted iterations
+cache   [  42% ] 000/100 VUs  1m03.0s/2m30s  10.00 iters/s
+
+running (22m18.7s), 000/100 VUs, 640 complete and 0 interrupted iterations
+cache   [  43% ] 000/100 VUs  1m04.0s/2m30s  10.00 iters/s
+
+running (22m19.6s), 000/100 VUs, 650 complete and 0 interrupted iterations
+cache   [  43% ] 000/100 VUs  1m05.0s/2m30s  10.00 iters/s
+
+running (22m20.6s), 000/100 VUs, 660 complete and 0 interrupted iterations
+cache   [  44% ] 000/100 VUs  1m06.0s/2m30s  10.00 iters/s
+
+running (22m21.6s), 000/100 VUs, 670 complete and 0 interrupted iterations
+cache   [  45% ] 000/100 VUs  1m07.0s/2m30s  10.00 iters/s
+
+running (22m22.7s), 000/100 VUs, 680 complete and 0 interrupted iterations
+cache   [  45% ] 000/100 VUs  1m08.0s/2m30s  10.00 iters/s
+
+running (22m23.7s), 000/100 VUs, 690 complete and 0 interrupted iterations
+cache   [  46% ] 000/100 VUs  1m09.0s/2m30s  10.00 iters/s
+
+running (22m24.6s), 000/100 VUs, 700 complete and 0 interrupted iterations
+cache   [  47% ] 000/100 VUs  1m10.0s/2m30s  10.00 iters/s
+
+running (22m25.7s), 000/100 VUs, 710 complete and 0 interrupted iterations
+cache   [  47% ] 000/100 VUs  1m11.0s/2m30s  10.00 iters/s
+
+running (22m26.6s), 000/100 VUs, 720 complete and 0 interrupted iterations
+cache   [  48% ] 000/100 VUs  1m12.0s/2m30s  10.00 iters/s
+
+running (22m27.7s), 000/100 VUs, 730 complete and 0 interrupted iterations
+cache   [  49% ] 000/100 VUs  1m13.0s/2m30s  10.00 iters/s
+
+running (22m28.7s), 000/100 VUs, 740 complete and 0 interrupted iterations
+cache   [  49% ] 000/100 VUs  1m14.0s/2m30s  10.00 iters/s
+
+running (22m29.6s), 000/100 VUs, 750 complete and 0 interrupted iterations
+cache   [  50% ] 000/100 VUs  1m15.0s/2m30s  10.00 iters/s
+
+running (22m30.6s), 000/100 VUs, 760 complete and 0 interrupted iterations
+cache   [  51% ] 000/100 VUs  1m16.0s/2m30s  10.00 iters/s
+
+running (22m31.7s), 000/100 VUs, 770 complete and 0 interrupted iterations
+cache   [  51% ] 000/100 VUs  1m17.0s/2m30s  10.00 iters/s
+
+running (22m32.7s), 000/100 VUs, 780 complete and 0 interrupted iterations
+cache   [  52% ] 000/100 VUs  1m18.0s/2m30s  10.00 iters/s
+
+running (22m33.6s), 000/100 VUs, 790 complete and 0 interrupted iterations
+cache   [  53% ] 000/100 VUs  1m19.0s/2m30s  10.00 iters/s
+
+running (22m34.6s), 000/100 VUs, 800 complete and 0 interrupted iterations
+cache   [  53% ] 000/100 VUs  1m20.0s/2m30s  10.00 iters/s
+
+running (22m35.7s), 000/100 VUs, 810 complete and 0 interrupted iterations
+cache   [  54% ] 000/100 VUs  1m21.0s/2m30s  10.00 iters/s
+
+running (22m36.6s), 000/100 VUs, 820 complete and 0 interrupted iterations
+cache   [  55% ] 000/100 VUs  1m22.0s/2m30s  10.00 iters/s
+
+running (22m37.7s), 000/100 VUs, 830 complete and 0 interrupted iterations
+cache   [  55% ] 000/100 VUs  1m23.0s/2m30s  10.00 iters/s
+
+running (22m38.7s), 000/100 VUs, 840 complete and 0 interrupted iterations
+cache   [  56% ] 000/100 VUs  1m24.0s/2m30s  10.00 iters/s
+
+running (22m39.7s), 000/100 VUs, 850 complete and 0 interrupted iterations
+cache   [  57% ] 000/100 VUs  1m25.0s/2m30s  10.00 iters/s
+
+running (22m40.6s), 000/100 VUs, 860 complete and 0 interrupted iterations
+cache   [  57% ] 000/100 VUs  1m26.0s/2m30s  10.00 iters/s
+
+running (22m41.6s), 000/100 VUs, 870 complete and 0 interrupted iterations
+cache   [  58% ] 000/100 VUs  1m27.0s/2m30s  10.00 iters/s
+
+running (22m42.7s), 000/100 VUs, 880 complete and 0 interrupted iterations
+cache   [  59% ] 000/100 VUs  1m28.0s/2m30s  10.00 iters/s
+
+running (22m43.6s), 000/100 VUs, 890 complete and 0 interrupted iterations
+cache   [  59% ] 000/100 VUs  1m29.0s/2m30s  10.00 iters/s
+
+running (22m44.7s), 000/100 VUs, 900 complete and 0 interrupted iterations
+cache   [  60% ] 000/100 VUs  1m30.0s/2m30s  10.00 iters/s
+
+running (22m45.7s), 000/100 VUs, 910 complete and 0 interrupted iterations
+cache   [  61% ] 000/100 VUs  1m31.0s/2m30s  10.00 iters/s
+
+running (22m46.7s), 000/100 VUs, 920 complete and 0 interrupted iterations
+cache   [  61% ] 000/100 VUs  1m32.0s/2m30s  10.00 iters/s
+
+running (22m47.6s), 000/100 VUs, 930 complete and 0 interrupted iterations
+cache   [  62% ] 000/100 VUs  1m33.0s/2m30s  10.00 iters/s
+
+running (22m48.7s), 000/100 VUs, 940 complete and 0 interrupted iterations
+cache   [  63% ] 000/100 VUs  1m34.0s/2m30s  10.00 iters/s
+
+running (22m49.6s), 000/100 VUs, 950 complete and 0 interrupted iterations
+cache   [  63% ] 000/100 VUs  1m35.0s/2m30s  10.00 iters/s
+
+running (22m50.6s), 000/100 VUs, 960 complete and 0 interrupted iterations
+cache   [  64% ] 000/100 VUs  1m36.0s/2m30s  10.00 iters/s
+
+running (22m51.6s), 000/100 VUs, 970 complete and 0 interrupted iterations
+cache   [  65% ] 000/100 VUs  1m37.0s/2m30s  10.00 iters/s
+
+running (22m52.7s), 000/100 VUs, 980 complete and 0 interrupted iterations
+cache   [  65% ] 000/100 VUs  1m38.0s/2m30s  10.00 iters/s
+
+running (22m53.6s), 000/100 VUs, 990 complete and 0 interrupted iterations
+cache   [  66% ] 000/100 VUs  1m39.0s/2m30s  10.00 iters/s
+
+running (22m54.6s), 000/100 VUs, 1000 complete and 0 interrupted iterations
+cache   [  67% ] 000/100 VUs  1m40.0s/2m30s  10.00 iters/s
+
+running (22m55.6s), 000/100 VUs, 1010 complete and 0 interrupted iterations
+cache   [  67% ] 000/100 VUs  1m41.0s/2m30s  10.00 iters/s
+
+running (22m56.6s), 000/100 VUs, 1020 complete and 0 interrupted iterations
+cache   [  68% ] 000/100 VUs  1m42.0s/2m30s  10.00 iters/s
+
+running (22m57.6s), 000/100 VUs, 1030 complete and 0 interrupted iterations
+cache   [  69% ] 000/100 VUs  1m43.0s/2m30s  10.00 iters/s
+
+running (22m58.6s), 000/100 VUs, 1040 complete and 0 interrupted iterations
+cache   [  69% ] 000/100 VUs  1m44.0s/2m30s  10.00 iters/s
+
+running (22m59.7s), 000/100 VUs, 1050 complete and 0 interrupted iterations
+cache   [  70% ] 000/100 VUs  1m45.0s/2m30s  10.00 iters/s
+
+running (23m00.6s), 000/100 VUs, 1060 complete and 0 interrupted iterations
+cache   [  71% ] 000/100 VUs  1m46.0s/2m30s  10.00 iters/s
+
+running (23m01.6s), 000/100 VUs, 1070 complete and 0 interrupted iterations
+cache   [  71% ] 000/100 VUs  1m47.0s/2m30s  10.00 iters/s
+
+running (23m02.6s), 000/100 VUs, 1080 complete and 0 interrupted iterations
+cache   [  72% ] 000/100 VUs  1m48.0s/2m30s  10.00 iters/s
+
+running (23m03.6s), 000/100 VUs, 1090 complete and 0 interrupted iterations
+cache   [  73% ] 000/100 VUs  1m49.0s/2m30s  10.00 iters/s
+
+running (23m04.6s), 000/100 VUs, 1100 complete and 0 interrupted iterations
+cache   [  73% ] 000/100 VUs  1m50.0s/2m30s  10.00 iters/s
+
+running (23m05.6s), 000/100 VUs, 1110 complete and 0 interrupted iterations
+cache   [  74% ] 000/100 VUs  1m51.0s/2m30s  10.00 iters/s
+
+running (23m06.6s), 000/100 VUs, 1120 complete and 0 interrupted iterations
+cache   [  75% ] 000/100 VUs  1m52.0s/2m30s  10.00 iters/s
+
+running (23m07.7s), 000/100 VUs, 1130 complete and 0 interrupted iterations
+cache   [  75% ] 000/100 VUs  1m53.0s/2m30s  10.00 iters/s
+
+running (23m08.6s), 000/100 VUs, 1140 complete and 0 interrupted iterations
+cache   [  76% ] 000/100 VUs  1m54.0s/2m30s  10.00 iters/s
+
+running (23m09.6s), 000/100 VUs, 1150 complete and 0 interrupted iterations
+cache   [  77% ] 000/100 VUs  1m55.0s/2m30s  10.00 iters/s
+
+running (23m10.7s), 000/100 VUs, 1160 complete and 0 interrupted iterations
+cache   [  77% ] 000/100 VUs  1m56.0s/2m30s  10.00 iters/s
+
+running (23m11.6s), 000/100 VUs, 1170 complete and 0 interrupted iterations
+cache   [  78% ] 000/100 VUs  1m57.0s/2m30s  10.00 iters/s
+
+running (23m12.6s), 000/100 VUs, 1180 complete and 0 interrupted iterations
+cache   [  79% ] 000/100 VUs  1m58.0s/2m30s  10.00 iters/s
+
+running (23m13.7s), 000/100 VUs, 1190 complete and 0 interrupted iterations
+cache   [  79% ] 000/100 VUs  1m59.0s/2m30s  10.00 iters/s
+
+running (23m14.6s), 000/100 VUs, 1200 complete and 0 interrupted iterations
+cache   [  80% ] 000/100 VUs  2m00.0s/2m30s  10.00 iters/s
+
+running (23m15.6s), 000/100 VUs, 1210 complete and 0 interrupted iterations
+cache   [  81% ] 000/100 VUs  2m01.0s/2m30s  10.00 iters/s
+
+running (23m16.6s), 000/100 VUs, 1220 complete and 0 interrupted iterations
+cache   [  81% ] 000/100 VUs  2m02.0s/2m30s  10.00 iters/s
+
+running (23m17.7s), 000/100 VUs, 1230 complete and 0 interrupted iterations
+cache   [  82% ] 000/100 VUs  2m03.0s/2m30s  10.00 iters/s
+
+running (23m18.6s), 000/100 VUs, 1240 complete and 0 interrupted iterations
+cache   [  83% ] 000/100 VUs  2m04.0s/2m30s  10.00 iters/s
+
+running (23m19.6s), 000/100 VUs, 1250 complete and 0 interrupted iterations
+cache   [  83% ] 000/100 VUs  2m05.0s/2m30s  10.00 iters/s
+
+running (23m20.7s), 000/100 VUs, 1260 complete and 0 interrupted iterations
+cache   [  84% ] 000/100 VUs  2m06.0s/2m30s  10.00 iters/s
+
+running (23m21.7s), 000/100 VUs, 1270 complete and 0 interrupted iterations
+cache   [  85% ] 000/100 VUs  2m07.0s/2m30s  10.00 iters/s
+
+running (23m22.6s), 000/100 VUs, 1280 complete and 0 interrupted iterations
+cache   [  85% ] 000/100 VUs  2m08.0s/2m30s  10.00 iters/s
+
+running (23m23.6s), 000/100 VUs, 1290 complete and 0 interrupted iterations
+cache   [  86% ] 000/100 VUs  2m09.0s/2m30s  10.00 iters/s
+
+running (23m24.6s), 000/100 VUs, 1300 complete and 0 interrupted iterations
+cache   [  87% ] 000/100 VUs  2m10.0s/2m30s  10.00 iters/s
+
+running (23m25.6s), 000/100 VUs, 1310 complete and 0 interrupted iterations
+cache   [  87% ] 000/100 VUs  2m11.0s/2m30s  10.00 iters/s
+
+running (23m26.7s), 000/100 VUs, 1320 complete and 0 interrupted iterations
+cache   [  88% ] 000/100 VUs  2m12.0s/2m30s  10.00 iters/s
+
+running (23m27.6s), 000/100 VUs, 1330 complete and 0 interrupted iterations
+cache   [  89% ] 000/100 VUs  2m13.0s/2m30s  10.00 iters/s
+
+running (23m28.6s), 000/100 VUs, 1340 complete and 0 interrupted iterations
+cache   [  89% ] 000/100 VUs  2m14.0s/2m30s  10.00 iters/s
+
+running (23m29.6s), 000/100 VUs, 1350 complete and 0 interrupted iterations
+cache   [  90% ] 000/100 VUs  2m15.0s/2m30s  10.00 iters/s
+
+running (23m30.7s), 000/100 VUs, 1360 complete and 0 interrupted iterations
+cache   [  91% ] 000/100 VUs  2m16.0s/2m30s  10.00 iters/s
+
+running (23m31.7s), 000/100 VUs, 1370 complete and 0 interrupted iterations
+cache   [  91% ] 000/100 VUs  2m17.0s/2m30s  10.00 iters/s
+
+running (23m32.7s), 000/100 VUs, 1380 complete and 0 interrupted iterations
+cache   [  92% ] 000/100 VUs  2m18.0s/2m30s  10.00 iters/s
+
+running (23m33.6s), 000/100 VUs, 1390 complete and 0 interrupted iterations
+cache   [  93% ] 000/100 VUs  2m19.0s/2m30s  10.00 iters/s
+
+running (23m34.6s), 000/100 VUs, 1400 complete and 0 interrupted iterations
+cache   [  93% ] 000/100 VUs  2m20.0s/2m30s  10.00 iters/s
+
+running (23m35.6s), 000/100 VUs, 1410 complete and 0 interrupted iterations
+cache   [  94% ] 000/100 VUs  2m21.0s/2m30s  10.00 iters/s
+
+running (23m36.6s), 000/100 VUs, 1420 complete and 0 interrupted iterations
+cache   [  95% ] 000/100 VUs  2m22.0s/2m30s  10.00 iters/s
+
+running (23m37.7s), 000/100 VUs, 1430 complete and 0 interrupted iterations
+cache   [  95% ] 000/100 VUs  2m23.0s/2m30s  10.00 iters/s
+
+running (23m38.7s), 000/100 VUs, 1440 complete and 0 interrupted iterations
+cache   [  96% ] 000/100 VUs  2m24.0s/2m30s  10.00 iters/s
+
+running (23m39.7s), 000/100 VUs, 1450 complete and 0 interrupted iterations
+cache   [  97% ] 000/100 VUs  2m25.0s/2m30s  10.00 iters/s
+
+running (23m40.6s), 000/100 VUs, 1460 complete and 0 interrupted iterations
+cache   [  97% ] 000/100 VUs  2m26.0s/2m30s  10.00 iters/s
+
+running (23m41.7s), 000/100 VUs, 1470 complete and 0 interrupted iterations
+cache   [  98% ] 000/100 VUs  2m27.0s/2m30s  10.00 iters/s
+
+running (23m42.7s), 000/100 VUs, 1480 complete and 0 interrupted iterations
+cache   [  99% ] 000/100 VUs  2m28.0s/2m30s  10.00 iters/s
+
+running (23m43.6s), 000/100 VUs, 1490 complete and 0 interrupted iterations
+cache   [  99% ] 000/100 VUs  2m29.0s/2m30s  10.00 iters/s
+
+running (23m44.6s), 000/100 VUs, 1500 complete and 0 interrupted iterations
+cache   [ 100% ] 000/100 VUs  2m30.0s/2m30s  10.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=54.02ms
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=6.12%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1501   1.053569/s
+    checks_succeeded...: 93.87% 1409 out of 1501
+    checks_failed......: 6.12%  92 out of 1501
+
+    ✗ status is 200
+      ↳  93% — ✓ 1409 / ✗ 92
+
+    HTTP
+    http_req_duration..............: avg=48.66ms  min=0s     med=1.59ms max=2.43s   p(90)=3.76ms p(95)=54.02ms p(99)=1.92s 
+      { expected_response:true }...: avg=2.55ms   min=1.14ms med=1.57ms max=58.28ms p(90)=2.48ms p(95)=3.65ms  p(99)=52.8ms
+    http_req_failed................: 6.12%  92 out of 1501
+    http_reqs......................: 1501   1.053569/s
+
+    EXECUTION
+    iteration_duration.............: avg=122.35ms min=1.76ms med=2.37ms max=7.2s    p(90)=6.28ms p(95)=86.05ms p(99)=3.77s 
+    iterations.....................: 1501   1.053569/s
+    vus............................: 0      min=0          max=41 
+    vus_max........................: 100    min=100        max=100
+
+    NETWORK
+    data_received..................: 261 kB 183 B/s
+    data_sent......................: 134 kB 94 B/s
+
+
+
+
+running (23m44.7s), 000/100 VUs, 1501 complete and 0 interrupted iterations
+cache ✓ [ 100% ] 000/100 VUs  2m30s  10.00 iters/s
+time="2026-11-06T16:40:49+03:00" level=error msg="thresholds on metrics 'http_req_failed' have been crossed"

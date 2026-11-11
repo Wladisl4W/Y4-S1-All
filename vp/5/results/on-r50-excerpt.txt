@@ -1,0 +1,8 @@
+    http_req_duration
+    http_req_failed
+    checks_total.......: 3001    50.011531/s
+    checks_succeeded...: 100.00% 3001 out of 3001
+    checks_failed......: 0.00%   0 out of 3001
+    http_req_duration..............: avg=5.91ms min=1.17ms med=2.24ms max=371.14ms p(90)=5.24ms p(95)=7.3ms   p(99)=143.89ms
+    http_req_failed................: 0.00%  0 out of 3001
+    http_reqs......................: 3001   50.011531/s

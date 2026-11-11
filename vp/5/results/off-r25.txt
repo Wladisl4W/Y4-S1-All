@@ -1,0 +1,518 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: test-cache.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+              * cache: 25.00 iterations/s for 1m0s (maxVUs: 100-600, gracefulStop: 30s)
+
+
+running (0m01.0s), 007/100 VUs, 18 complete and 0 interrupted iterations
+cache   [   2% ] 007/100 VUs  0m01.0s/1m0s  25.00 iters/s
+
+running (0m02.0s), 013/100 VUs, 37 complete and 0 interrupted iterations
+cache   [   3% ] 013/100 VUs  0m02.0s/1m0s  25.00 iters/s
+
+running (0m03.0s), 018/100 VUs, 57 complete and 0 interrupted iterations
+cache   [   5% ] 018/100 VUs  0m03.0s/1m0s  25.00 iters/s
+
+running (0m04.0s), 024/100 VUs, 76 complete and 0 interrupted iterations
+cache   [   7% ] 024/100 VUs  0m04.0s/1m0s  25.00 iters/s
+
+running (0m05.0s), 030/100 VUs, 95 complete and 0 interrupted iterations
+cache   [   8% ] 030/100 VUs  0m05.0s/1m0s  25.00 iters/s
+
+running (0m06.0s), 036/100 VUs, 114 complete and 0 interrupted iterations
+cache   [  10% ] 036/100 VUs  0m06.0s/1m0s  25.00 iters/s
+
+running (0m07.0s), 041/100 VUs, 134 complete and 0 interrupted iterations
+cache   [  12% ] 041/100 VUs  0m07.0s/1m0s  25.00 iters/s
+
+running (0m08.0s), 047/100 VUs, 153 complete and 0 interrupted iterations
+cache   [  13% ] 047/100 VUs  0m08.0s/1m0s  25.00 iters/s
+
+running (0m09.0s), 053/100 VUs, 172 complete and 0 interrupted iterations
+cache   [  15% ] 053/100 VUs  0m09.0s/1m0s  25.00 iters/s
+
+running (0m10.0s), 059/100 VUs, 191 complete and 0 interrupted iterations
+cache   [  17% ] 059/100 VUs  0m10.0s/1m0s  25.00 iters/s
+
+running (0m11.0s), 064/100 VUs, 211 complete and 0 interrupted iterations
+cache   [  18% ] 064/100 VUs  0m11.0s/1m0s  25.00 iters/s
+
+running (0m12.0s), 070/100 VUs, 230 complete and 0 interrupted iterations
+cache   [  20% ] 070/100 VUs  0m12.0s/1m0s  25.00 iters/s
+
+running (0m13.0s), 076/100 VUs, 249 complete and 0 interrupted iterations
+cache   [  22% ] 076/100 VUs  0m13.0s/1m0s  25.00 iters/s
+
+running (0m14.0s), 082/100 VUs, 268 complete and 0 interrupted iterations
+cache   [  23% ] 082/100 VUs  0m14.0s/1m0s  25.00 iters/s
+
+running (0m15.0s), 087/100 VUs, 288 complete and 0 interrupted iterations
+cache   [  25% ] 087/100 VUs  0m15.0s/1m0s  25.00 iters/s
+
+running (0m16.0s), 093/100 VUs, 307 complete and 0 interrupted iterations
+cache   [  27% ] 093/100 VUs  0m16.0s/1m0s  25.00 iters/s
+
+running (0m17.0s), 099/100 VUs, 326 complete and 0 interrupted iterations
+cache   [  28% ] 099/100 VUs  0m17.0s/1m0s  25.00 iters/s
+
+running (0m18.0s), 102/103 VUs, 345 complete and 0 interrupted iterations
+cache   [  30% ] 102/103 VUs  0m18.0s/1m0s  25.00 iters/s
+
+running (0m19.0s), 104/106 VUs, 365 complete and 0 interrupted iterations
+cache   [  32% ] 104/106 VUs  0m19.0s/1m0s  25.00 iters/s
+
+running (0m20.0s), 108/108 VUs, 384 complete and 0 interrupted iterations
+cache   [  33% ] 108/108 VUs  0m20.0s/1m0s  25.00 iters/s
+
+running (0m21.0s), 111/111 VUs, 403 complete and 0 interrupted iterations
+cache   [  35% ] 111/111 VUs  0m21.0s/1m0s  25.00 iters/s
+
+running (0m22.0s), 114/114 VUs, 422 complete and 0 interrupted iterations
+cache   [  37% ] 114/114 VUs  0m22.0s/1m0s  25.00 iters/s
+
+running (0m23.0s), 117/117 VUs, 441 complete and 0 interrupted iterations
+cache   [  38% ] 117/117 VUs  0m23.0s/1m0s  25.00 iters/s
+
+running (0m24.0s), 119/120 VUs, 461 complete and 0 interrupted iterations
+cache   [  40% ] 119/120 VUs  0m24.0s/1m0s  25.00 iters/s
+
+running (0m25.0s), 122/123 VUs, 480 complete and 0 interrupted iterations
+cache   [  42% ] 122/123 VUs  0m25.0s/1m0s  25.00 iters/s
+
+running (0m26.0s), 125/126 VUs, 499 complete and 0 interrupted iterations
+cache   [  43% ] 125/126 VUs  0m26.0s/1m0s  25.00 iters/s
+
+running (0m27.0s), 127/129 VUs, 519 complete and 0 interrupted iterations
+cache   [  45% ] 127/129 VUs  0m27.0s/1m0s  25.00 iters/s
+
+running (0m28.0s), 131/131 VUs, 538 complete and 0 interrupted iterations
+cache   [  47% ] 131/131 VUs  0m28.0s/1m0s  25.00 iters/s
+
+running (0m29.0s), 134/134 VUs, 557 complete and 0 interrupted iterations
+cache   [  48% ] 134/134 VUs  0m29.0s/1m0s  25.00 iters/s
+
+running (0m30.0s), 137/137 VUs, 576 complete and 0 interrupted iterations
+cache   [  50% ] 137/137 VUs  0m30.0s/1m0s  25.00 iters/s
+
+running (0m31.0s), 139/140 VUs, 596 complete and 0 interrupted iterations
+cache   [  52% ] 139/140 VUs  0m31.0s/1m0s  25.00 iters/s
+
+running (0m32.0s), 143/143 VUs, 614 complete and 0 interrupted iterations
+cache   [  53% ] 143/143 VUs  0m32.0s/1m0s  25.00 iters/s
+
+running (0m33.0s), 145/147 VUs, 633 complete and 0 interrupted iterations
+cache   [  55% ] 145/147 VUs  0m33.0s/1m0s  25.00 iters/s
+
+running (0m34.0s), 149/150 VUs, 651 complete and 0 interrupted iterations
+cache   [  57% ] 149/150 VUs  0m34.0s/1m0s  25.00 iters/s
+
+running (0m35.0s), 152/153 VUs, 670 complete and 0 interrupted iterations
+cache   [  58% ] 152/153 VUs  0m35.0s/1m0s  25.00 iters/s
+
+running (0m36.0s), 155/156 VUs, 689 complete and 0 interrupted iterations
+cache   [  60% ] 155/156 VUs  0m36.0s/1m0s  25.00 iters/s
+
+running (0m37.0s), 159/159 VUs, 707 complete and 0 interrupted iterations
+cache   [  62% ] 159/159 VUs  0m37.0s/1m0s  25.00 iters/s
+
+running (0m38.0s), 162/162 VUs, 726 complete and 0 interrupted iterations
+cache   [  63% ] 162/162 VUs  0m38.0s/1m0s  25.00 iters/s
+
+running (0m39.0s), 165/165 VUs, 745 complete and 0 interrupted iterations
+cache   [  65% ] 165/165 VUs  0m39.0s/1m0s  25.00 iters/s
+
+running (0m40.0s), 167/168 VUs, 765 complete and 0 interrupted iterations
+cache   [  67% ] 167/168 VUs  0m40.0s/1m0s  25.00 iters/s
+
+running (0m41.0s), 170/171 VUs, 784 complete and 0 interrupted iterations
+cache   [  68% ] 170/171 VUs  0m41.0s/1m0s  25.00 iters/s
+
+running (0m42.0s), 173/174 VUs, 803 complete and 0 interrupted iterations
+cache   [  70% ] 173/174 VUs  0m42.0s/1m0s  25.00 iters/s
+
+running (0m43.0s), 176/177 VUs, 822 complete and 0 interrupted iterations
+cache   [  72% ] 176/177 VUs  0m43.0s/1m0s  25.00 iters/s
+
+running (0m44.0s), 179/180 VUs, 841 complete and 0 interrupted iterations
+cache   [  73% ] 179/180 VUs  0m44.0s/1m0s  25.00 iters/s
+
+running (0m45.0s), 181/183 VUs, 861 complete and 0 interrupted iterations
+cache   [  75% ] 181/183 VUs  0m45.0s/1m0s  25.00 iters/s
+
+running (0m46.0s), 185/185 VUs, 880 complete and 0 interrupted iterations
+cache   [  77% ] 185/185 VUs  0m46.0s/1m0s  25.00 iters/s
+
+running (0m47.0s), 188/188 VUs, 899 complete and 0 interrupted iterations
+cache   [  78% ] 188/188 VUs  0m47.0s/1m0s  25.00 iters/s
+
+running (0m48.0s), 190/191 VUs, 919 complete and 0 interrupted iterations
+cache   [  80% ] 190/191 VUs  0m48.0s/1m0s  25.00 iters/s
+
+running (0m49.0s), 193/194 VUs, 938 complete and 0 interrupted iterations
+cache   [  82% ] 193/194 VUs  0m49.0s/1m0s  25.00 iters/s
+
+running (0m50.0s), 196/197 VUs, 957 complete and 0 interrupted iterations
+cache   [  83% ] 196/197 VUs  0m50.0s/1m0s  25.00 iters/s
+
+running (0m51.0s), 199/200 VUs, 976 complete and 0 interrupted iterations
+cache   [  85% ] 199/200 VUs  0m51.0s/1m0s  25.00 iters/s
+
+running (0m52.0s), 201/203 VUs, 996 complete and 0 interrupted iterations
+cache   [  87% ] 201/203 VUs  0m52.0s/1m0s  25.00 iters/s
+
+running (0m53.0s), 205/205 VUs, 1015 complete and 0 interrupted iterations
+cache   [  88% ] 205/205 VUs  0m53.0s/1m0s  25.00 iters/s
+
+running (0m54.0s), 208/208 VUs, 1034 complete and 0 interrupted iterations
+cache   [  90% ] 208/208 VUs  0m54.0s/1m0s  25.00 iters/s
+
+running (0m55.0s), 211/211 VUs, 1053 complete and 0 interrupted iterations
+cache   [  92% ] 211/211 VUs  0m55.0s/1m0s  25.00 iters/s
+
+running (0m56.0s), 214/214 VUs, 1072 complete and 0 interrupted iterations
+cache   [  93% ] 214/214 VUs  0m56.0s/1m0s  25.00 iters/s
+
+running (0m57.0s), 216/217 VUs, 1092 complete and 0 interrupted iterations
+cache   [  95% ] 216/217 VUs  0m57.0s/1m0s  25.00 iters/s
+
+running (0m58.0s), 219/220 VUs, 1111 complete and 0 interrupted iterations
+cache   [  97% ] 219/220 VUs  0m58.0s/1m0s  25.00 iters/s
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+
+running (0m59.0s), 221/223 VUs, 1131 complete and 0 interrupted iterations
+cache   [  98% ] 221/223 VUs  0m59.0s/1m0s  25.00 iters/s
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:18+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+
+running (1m00.0s), 223/224 VUs, 1153 complete and 0 interrupted iterations
+cache   [ 100% ] 223/224 VUs  1m00.0s/1m0s  25.00 iters/s
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:19+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+
+running (1m01.0s), 202/224 VUs, 1175 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:20+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+
+running (1m02.0s), 180/224 VUs, 1197 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:21+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+
+running (1m03.0s), 157/224 VUs, 1220 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:22+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+
+running (1m04.0s), 135/224 VUs, 1242 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:23+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+
+running (1m05.0s), 113/224 VUs, 1264 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:24+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+
+running (1m06.0s), 091/224 VUs, 1286 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:25+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+
+running (1m07.0s), 069/224 VUs, 1308 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+
+running (1m08.0s), 047/224 VUs, 1330 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+
+running (1m09.0s), 025/224 VUs, 1352 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": request timeout"
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": request timeout"
+
+running (1m10.0s), 001/224 VUs, 1376 complete and 0 interrupted iterations
+cache ↓ [ 100% ] 224/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": request timeout"
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=10s
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=18.22%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1377   19.67076/s
+    checks_succeeded...: 81.77% 1126 out of 1377
+    checks_failed......: 18.22% 251 out of 1377
+
+    ✗ status is 200
+      ↳  81% — ✓ 1126 / ✗ 251
+
+    HTTP
+    http_req_duration..............: avg=6.49s min=51.91ms med=7.08s max=10s   p(90)=10s   p(95)=10s   p(99)=10s  
+      { expected_response:true }...: avg=5.71s min=51.91ms med=6.06s max=9.99s p(90)=9.23s p(95)=9.61s p(99)=9.91s
+    http_req_failed................: 18.22% 251 out of 1377
+    http_reqs......................: 1377   19.67076/s
+
+    EXECUTION
+    dropped_iterations.............: 124    1.771368/s
+    iteration_duration.............: avg=6.49s min=53.14ms med=7.08s max=10s   p(90)=10s   p(95)=10s   p(99)=10s  
+    iterations.....................: 1377   19.67076/s
+    vus............................: 1      min=1           max=223
+    vus_max........................: 224    min=100         max=224
+
+    NETWORK
+    data_received..................: 209 kB 3.0 kB/s
+    data_sent......................: 124 kB 1.8 kB/s
+
+
+
+
+running (1m10.0s), 000/224 VUs, 1377 complete and 0 interrupted iterations
+cache ✓ [ 100% ] 000/224 VUs  1m0s  25.00 iters/s
+time="2026-11-06T15:08:30+03:00" level=error msg="thresholds on metrics 'http_req_duration, http_req_failed' have been crossed"

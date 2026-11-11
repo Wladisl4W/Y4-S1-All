@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: cache-app-lr5
+  namespace: monitoring
+  labels: {release: prometheus}
+spec:
+  namespaceSelector:
+    matchNames: [vp-lr5]
+  selector:
+    matchLabels: {app: cache-app}
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 5s

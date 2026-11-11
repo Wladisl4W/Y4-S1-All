@@ -1,0 +1,8 @@
+    http_req_duration
+    http_req_failed
+    checks_total.......: 1201    10.003839/s
+    checks_succeeded...: 100.00% 1201 out of 1201
+    checks_failed......: 0.00%   0 out of 1201
+    http_req_duration..............: avg=52.98ms min=51.95ms med=52.58ms max=75.78ms p(90)=54.17ms p(95)=55.13ms p(99)=57.7ms 
+    http_req_failed................: 0.00%  0 out of 1201
+    http_reqs......................: 1201   10.003839/s

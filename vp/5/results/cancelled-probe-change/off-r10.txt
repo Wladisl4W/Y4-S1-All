@@ -1,0 +1,78 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: test-cache.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+              * cache: 10.00 iterations/s for 1m0s (maxVUs: 100-600, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/100 VUs, 10 complete and 0 interrupted iterations
+cache   [   2% ] 000/100 VUs  0m01.0s/1m0s  10.00 iters/s
+
+running (0m02.0s), 000/100 VUs, 20 complete and 0 interrupted iterations
+cache   [   3% ] 000/100 VUs  0m02.0s/1m0s  10.00 iters/s
+
+running (0m03.0s), 000/100 VUs, 30 complete and 0 interrupted iterations
+cache   [   5% ] 000/100 VUs  0m03.0s/1m0s  10.00 iters/s
+
+running (0m04.0s), 000/100 VUs, 40 complete and 0 interrupted iterations
+cache   [   7% ] 000/100 VUs  0m04.0s/1m0s  10.00 iters/s
+
+running (0m05.0s), 000/100 VUs, 50 complete and 0 interrupted iterations
+cache   [   8% ] 000/100 VUs  0m05.0s/1m0s  10.00 iters/s
+
+running (0m06.0s), 000/100 VUs, 60 complete and 0 interrupted iterations
+cache   [  10% ] 000/100 VUs  0m06.0s/1m0s  10.00 iters/s
+
+running (0m07.0s), 000/100 VUs, 70 complete and 0 interrupted iterations
+cache   [  12% ] 000/100 VUs  0m07.0s/1m0s  10.00 iters/s
+
+running (0m08.0s), 000/100 VUs, 80 complete and 0 interrupted iterations
+cache   [  13% ] 000/100 VUs  0m08.0s/1m0s  10.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=52.57ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 88      9.944982/s
+    checks_succeeded...: 100.00% 88 out of 88
+    checks_failed......: 0.00%   0 out of 88
+
+    ✓ status is 200
+
+    HTTP
+    http_req_duration..............: avg=51.72ms min=51.28ms med=51.51ms max=54.39ms p(90)=52.36ms p(95)=52.57ms p(99)=54.36ms
+      { expected_response:true }...: avg=51.72ms min=51.28ms med=51.51ms max=54.39ms p(90)=52.36ms p(95)=52.57ms p(99)=54.36ms
+    http_req_failed................: 0.00%  0 out of 88
+    http_reqs......................: 88     9.944982/s
+
+    EXECUTION
+    iteration_duration.............: avg=52.97ms min=52.05ms med=52.46ms max=59.34ms p(90)=54.56ms p(95)=55.28ms p(99)=59.05ms
+    iterations.....................: 88     9.944982/s
+    vus............................: 0      min=0       max=0  
+    vus_max........................: 100    min=100     max=100
+
+    NETWORK
+    data_received..................: 16 kB  1.8 kB/s
+    data_sent......................: 8.0 kB 906 B/s
+
+
+
+
+running (0m08.9s), 000/100 VUs, 88 complete and 1 interrupted iterations
+cache ✗ [  15% ] 001/100 VUs  0m08.8s/1m0s  10.00 iters/s

@@ -1,0 +1,704 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: test-cache.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+              * cache: 25.00 iterations/s for 1m0s (maxVUs: 100-600, gracefulStop: 30s)
+
+
+running (0m01.0s), 007/100 VUs, 18 complete and 0 interrupted iterations
+cache   [   2% ] 007/100 VUs  0m01.0s/1m0s  25.00 iters/s
+
+running (0m02.0s), 013/100 VUs, 37 complete and 0 interrupted iterations
+cache   [   3% ] 013/100 VUs  0m02.0s/1m0s  25.00 iters/s
+
+running (0m03.0s), 019/100 VUs, 56 complete and 0 interrupted iterations
+cache   [   5% ] 019/100 VUs  0m03.0s/1m0s  25.00 iters/s
+
+running (0m04.0s), 024/100 VUs, 76 complete and 0 interrupted iterations
+cache   [   7% ] 024/100 VUs  0m04.0s/1m0s  25.00 iters/s
+
+running (0m05.0s), 030/100 VUs, 95 complete and 0 interrupted iterations
+cache   [   8% ] 030/100 VUs  0m05.0s/1m0s  25.00 iters/s
+
+running (0m06.0s), 036/100 VUs, 114 complete and 0 interrupted iterations
+cache   [  10% ] 036/100 VUs  0m06.0s/1m0s  25.00 iters/s
+
+running (0m07.0s), 042/100 VUs, 133 complete and 0 interrupted iterations
+cache   [  12% ] 042/100 VUs  0m07.0s/1m0s  25.00 iters/s
+
+running (0m08.0s), 048/100 VUs, 152 complete and 0 interrupted iterations
+cache   [  13% ] 048/100 VUs  0m08.0s/1m0s  25.00 iters/s
+
+running (0m09.0s), 053/100 VUs, 172 complete and 0 interrupted iterations
+cache   [  15% ] 053/100 VUs  0m09.0s/1m0s  25.00 iters/s
+
+running (0m10.0s), 059/100 VUs, 191 complete and 0 interrupted iterations
+cache   [  17% ] 059/100 VUs  0m10.0s/1m0s  25.00 iters/s
+
+running (0m11.0s), 065/100 VUs, 210 complete and 0 interrupted iterations
+cache   [  18% ] 065/100 VUs  0m11.0s/1m0s  25.00 iters/s
+
+running (0m12.0s), 071/100 VUs, 229 complete and 0 interrupted iterations
+cache   [  20% ] 071/100 VUs  0m12.0s/1m0s  25.00 iters/s
+
+running (0m13.0s), 076/100 VUs, 249 complete and 0 interrupted iterations
+cache   [  22% ] 076/100 VUs  0m13.0s/1m0s  25.00 iters/s
+
+running (0m14.0s), 082/100 VUs, 268 complete and 0 interrupted iterations
+cache   [  23% ] 082/100 VUs  0m14.0s/1m0s  25.00 iters/s
+
+running (0m15.0s), 088/100 VUs, 287 complete and 0 interrupted iterations
+cache   [  25% ] 088/100 VUs  0m15.0s/1m0s  25.00 iters/s
+
+running (0m16.0s), 094/100 VUs, 306 complete and 0 interrupted iterations
+cache   [  27% ] 094/100 VUs  0m16.0s/1m0s  25.00 iters/s
+
+running (0m17.0s), 099/100 VUs, 326 complete and 0 interrupted iterations
+cache   [  28% ] 099/100 VUs  0m17.0s/1m0s  25.00 iters/s
+
+running (0m18.0s), 102/103 VUs, 345 complete and 0 interrupted iterations
+cache   [  30% ] 102/103 VUs  0m18.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:26+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m19.0s), 089/104 VUs, 382 complete and 0 interrupted iterations
+cache   [  32% ] 089/104 VUs  0m19.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:27+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m20.0s), 070/104 VUs, 426 complete and 0 interrupted iterations
+cache   [  33% ] 070/104 VUs  0m20.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:28+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m21.0s), 050/104 VUs, 471 complete and 0 interrupted iterations
+cache   [  35% ] 050/104 VUs  0m21.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:29+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m22.0s), 031/104 VUs, 515 complete and 0 interrupted iterations
+cache   [  37% ] 031/104 VUs  0m22.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:30+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m23.0s), 012/104 VUs, 559 complete and 0 interrupted iterations
+cache   [  38% ] 012/104 VUs  0m23.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:31+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m24.0s), 003/104 VUs, 593 complete and 0 interrupted iterations
+cache   [  40% ] 003/104 VUs  0m24.0s/1m0s  25.00 iters/s
+
+running (0m25.0s), 009/104 VUs, 612 complete and 0 interrupted iterations
+cache   [  42% ] 009/104 VUs  0m25.0s/1m0s  25.00 iters/s
+
+running (0m26.0s), 015/104 VUs, 631 complete and 0 interrupted iterations
+cache   [  43% ] 015/104 VUs  0m26.0s/1m0s  25.00 iters/s
+
+running (0m27.0s), 021/104 VUs, 650 complete and 0 interrupted iterations
+cache   [  45% ] 021/104 VUs  0m27.0s/1m0s  25.00 iters/s
+
+running (0m28.0s), 026/104 VUs, 670 complete and 0 interrupted iterations
+cache   [  47% ] 026/104 VUs  0m28.0s/1m0s  25.00 iters/s
+
+running (0m29.0s), 032/104 VUs, 689 complete and 0 interrupted iterations
+cache   [  48% ] 032/104 VUs  0m29.0s/1m0s  25.00 iters/s
+
+running (0m30.0s), 038/104 VUs, 708 complete and 0 interrupted iterations
+cache   [  50% ] 038/104 VUs  0m30.0s/1m0s  25.00 iters/s
+
+running (0m31.0s), 044/104 VUs, 727 complete and 0 interrupted iterations
+cache   [  52% ] 044/104 VUs  0m31.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": read tcp 10.80.128.80:42892->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": EOF"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": read tcp 10.80.128.80:43034->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": read tcp 10.80.128.80:43026->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": read tcp 10.80.128.80:43016->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": read tcp 10.80.128.80:43030->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": read tcp 10.80.128.80:43000->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": read tcp 10.80.128.80:43008->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": read tcp 10.80.128.80:42988->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": read tcp 10.80.128.80:42964->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": read tcp 10.80.128.80:42986->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": read tcp 10.80.128.80:43278->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": read tcp 10.80.128.80:43244->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": read tcp 10.80.128.80:43186->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": read tcp 10.80.128.80:43088->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": read tcp 10.80.128.80:43182->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": read tcp 10.80.128.80:43078->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": read tcp 10.80.128.80:43104->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": read tcp 10.80.128.80:43166->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": read tcp 10.80.128.80:43152->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": read tcp 10.80.128.80:43096->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": read tcp 10.80.128.80:43142->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": read tcp 10.80.128.80:43130->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": read tcp 10.80.128.80:42904->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": read tcp 10.80.128.80:43308->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": read tcp 10.80.128.80:43304->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": read tcp 10.80.128.80:43066->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": read tcp 10.80.128.80:43322->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": read tcp 10.80.128.80:42928->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": read tcp 10.80.128.80:43214->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": read tcp 10.80.128.80:43270->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": read tcp 10.80.128.80:43178->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": read tcp 10.80.128.80:43288->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": read tcp 10.80.128.80:43150->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": read tcp 10.80.128.80:43050->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": read tcp 10.80.128.80:42916->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": read tcp 10.80.128.80:43286->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": read tcp 10.80.128.80:43282->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": read tcp 10.80.128.80:42970->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": read tcp 10.80.128.80:43254->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": read tcp 10.80.128.80:43200->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": read tcp 10.80.128.80:43274->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": read tcp 10.80.128.80:43230->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": read tcp 10.80.128.80:42954->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": read tcp 10.80.128.80:43110->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": read tcp 10.80.128.80:42942->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": read tcp 10.80.128.80:43060->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": read tcp 10.80.128.80:43126->10.80.128.80:30085: read: connection reset by peer"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m32.0s), 000/104 VUs, 796 complete and 0 interrupted iterations
+cache   [  53% ] 000/104 VUs  0m32.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:40+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m33.0s), 000/104 VUs, 821 complete and 0 interrupted iterations
+cache   [  55% ] 000/104 VUs  0m33.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:41+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m34.0s), 000/104 VUs, 846 complete and 0 interrupted iterations
+cache   [  57% ] 000/104 VUs  0m34.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:42+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m35.0s), 000/104 VUs, 871 complete and 0 interrupted iterations
+cache   [  58% ] 000/104 VUs  0m35.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:43+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m36.0s), 000/104 VUs, 896 complete and 0 interrupted iterations
+cache   [  60% ] 000/104 VUs  0m36.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:44+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m37.0s), 000/104 VUs, 921 complete and 0 interrupted iterations
+cache   [  62% ] 000/104 VUs  0m37.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:45+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m38.0s), 000/104 VUs, 946 complete and 0 interrupted iterations
+cache   [  63% ] 000/104 VUs  0m38.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:51:46+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m39.0s), 007/104 VUs, 964 complete and 0 interrupted iterations
+cache   [  65% ] 007/104 VUs  0m39.0s/1m0s  25.00 iters/s
+
+running (0m40.0s), 012/104 VUs, 984 complete and 0 interrupted iterations
+cache   [  67% ] 012/104 VUs  0m40.0s/1m0s  25.00 iters/s
+
+running (0m41.0s), 018/104 VUs, 1003 complete and 0 interrupted iterations
+cache   [  68% ] 018/104 VUs  0m41.0s/1m0s  25.00 iters/s
+
+running (0m42.0s), 024/104 VUs, 1022 complete and 0 interrupted iterations
+cache   [  70% ] 024/104 VUs  0m42.0s/1m0s  25.00 iters/s
+
+running (0m43.0s), 030/104 VUs, 1041 complete and 0 interrupted iterations
+cache   [  72% ] 030/104 VUs  0m43.0s/1m0s  25.00 iters/s
+
+running (0m44.0s), 035/104 VUs, 1061 complete and 0 interrupted iterations
+cache   [  73% ] 035/104 VUs  0m44.0s/1m0s  25.00 iters/s
+
+running (0m45.0s), 041/104 VUs, 1080 complete and 0 interrupted iterations
+cache   [  75% ] 041/104 VUs  0m45.0s/1m0s  25.00 iters/s
+
+running (0m46.0s), 047/104 VUs, 1099 complete and 0 interrupted iterations
+cache   [  77% ] 047/104 VUs  0m46.0s/1m0s  25.00 iters/s
+
+running (0m47.0s), 053/104 VUs, 1118 complete and 0 interrupted iterations
+cache   [  78% ] 053/104 VUs  0m47.0s/1m0s  25.00 iters/s
+
+running (0m48.0s), 058/104 VUs, 1138 complete and 0 interrupted iterations
+cache   [  80% ] 058/104 VUs  0m48.0s/1m0s  25.00 iters/s
+
+running (0m49.0s), 064/104 VUs, 1157 complete and 0 interrupted iterations
+cache   [  82% ] 064/104 VUs  0m49.0s/1m0s  25.00 iters/s
+
+running (0m50.0s), 070/104 VUs, 1176 complete and 0 interrupted iterations
+cache   [  83% ] 070/104 VUs  0m50.0s/1m0s  25.00 iters/s
+
+running (0m51.0s), 075/104 VUs, 1196 complete and 0 interrupted iterations
+cache   [  85% ] 075/104 VUs  0m51.0s/1m0s  25.00 iters/s
+
+running (0m52.0s), 081/104 VUs, 1215 complete and 0 interrupted iterations
+cache   [  87% ] 081/104 VUs  0m52.0s/1m0s  25.00 iters/s
+
+running (0m53.0s), 087/104 VUs, 1234 complete and 0 interrupted iterations
+cache   [  88% ] 087/104 VUs  0m53.0s/1m0s  25.00 iters/s
+
+running (0m54.0s), 092/104 VUs, 1254 complete and 0 interrupted iterations
+cache   [  90% ] 092/104 VUs  0m54.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:02+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m55.0s), 075/104 VUs, 1296 complete and 0 interrupted iterations
+cache   [  92% ] 075/104 VUs  0m55.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:03+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m56.0s), 056/104 VUs, 1340 complete and 0 interrupted iterations
+cache   [  93% ] 056/104 VUs  0m56.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:04+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m57.0s), 036/104 VUs, 1385 complete and 0 interrupted iterations
+cache   [  95% ] 036/104 VUs  0m57.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:05+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m58.0s), 017/104 VUs, 1429 complete and 0 interrupted iterations
+cache   [  97% ] 017/104 VUs  0m58.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:06+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/5?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/6?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/7?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/8?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/9?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/10?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/1?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (0m59.0s), 000/104 VUs, 1471 complete and 0 interrupted iterations
+cache   [  98% ] 000/104 VUs  0m59.0s/1m0s  25.00 iters/s
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/2?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/3?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+time="2026-11-06T14:52:07+03:00" level=warning msg="Request Failed" error="Get \"http://10.80.128.80:30085/data/4?cache=off\": dial tcp 10.80.128.80:30085: connect: connection refused"
+
+running (1m00.0s), 006/104 VUs, 1490 complete and 0 interrupted iterations
+cache   [ 100% ] 006/104 VUs  1m00.0s/1m0s  25.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=4.7s
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=31.19%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1497   24.817149/s
+    checks_succeeded...: 68.80% 1030 out of 1497
+    checks_failed......: 31.19% 467 out of 1497
+
+    ✗ status is 200
+      ↳  68% — ✓ 1030 / ✗ 467
+
+    HTTP
+    http_req_duration..............: avg=1.62s min=0s       med=1.16s max=5.33s p(90)=4.25s p(95)=4.7s  p(99)=5.23s
+      { expected_response:true }...: avg=2.31s min=51.89ms  med=2.09s max=5.33s p(90)=4.52s p(95)=4.86s p(99)=5.26s
+    http_req_failed................: 31.19% 467 out of 1497
+    http_reqs......................: 1497   24.817149/s
+
+    EXECUTION
+    dropped_iterations.............: 4      0.066312/s
+    iteration_duration.............: avg=1.62s min=576.99µs med=1.16s max=5.33s p(90)=4.25s p(95)=4.7s  p(99)=5.23s
+    iterations.....................: 1497   24.817149/s
+    vus............................: 6      min=0           max=102
+    vus_max........................: 104    min=100         max=104
+
+    NETWORK
+    data_received..................: 191 kB 3.2 kB/s
+    data_sent......................: 97 kB  1.6 kB/s
+
+
+
+
+running (1m00.3s), 000/104 VUs, 1497 complete and 0 interrupted iterations
+cache ✓ [ 100% ] 000/104 VUs  1m0s  25.00 iters/s
+time="2026-11-06T14:52:09+03:00" level=error msg="thresholds on metrics 'http_req_duration, http_req_failed' have been crossed"
